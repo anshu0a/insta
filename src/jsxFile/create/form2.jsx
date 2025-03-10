@@ -38,7 +38,7 @@ export default function Form({ setResponseMessage }) {
         try {
             setLod2(true);
 
-            const response = await axios.post('http://localhost:8080/newUser', info, { withCredentials: true, });
+            const response = await axios.post('https://instaserver-knen.onrender.com/newUser', info, { withCredentials: true, });
 
             setResponseMessage(response.data);
 
@@ -95,7 +95,7 @@ export default function Form({ setResponseMessage }) {
                 try {
                     setLod2(true);
 
-                    const response = await axios.post('http://localhost:8080/otp/create', {
+                    const response = await axios.post('https://instaserver-knen.onrender.com/otp/create', {
                         email: info.email,
                         name: info.fname
                     });
@@ -146,7 +146,7 @@ export default function Form({ setResponseMessage }) {
 
                 try {
                     setLod2(true)
-                    const response = await axios.post('http://localhost:8080/checkUsername', { username: info.user });
+                    const response = await axios.post('https://instaserver-knen.onrender.com/checkUsername', { username: info.user });
                     setLod2(false)
 
                     if (response.data?.msg === "ok") {
@@ -193,7 +193,7 @@ export default function Form({ setResponseMessage }) {
 
         try {
             setLod2(true)
-            const response = await axios.post('http://localhost:8080/otp/create', { email: info.email, name: info.fname });
+            const response = await axios.post('https://instaserver-knen.onrender.com/otp/create', { email: info.email, name: info.fname });
             setLod2(false)
             setResponseMessage(response.data);
             setOtp((old) => ({ ...old, no: response.data.otp, loading: false, }));

@@ -24,7 +24,7 @@ export default function Feedback({ cutfun, setResponseMessage }) {
         if (e.target.className === "submit2") {
             setErr("")
             try {
-                const response = await axios.post('http://localhost:8080/suggestion', { inp }, { withCredentials: true });
+                const response = await axios.post('https://instaserver-knen.onrender.com/suggestion', { inp }, { withCredentials: true });
                 if (response.data?.message === "Login required.") {
                     setResponseMessage(response.data);
                     await navigate("/Login");

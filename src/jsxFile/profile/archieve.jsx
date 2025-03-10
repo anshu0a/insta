@@ -24,7 +24,7 @@ export default function archieve({ post, setResponseMessage,setRes, setShowarc }
         try {
             setLod2(true);
             const response = await axios.post(
-                `http://localhost:8080/editpostbio/notarc/${postid}`,
+                `https://instaserver-knen.onrender.com/editpostbio/notarc/${postid}`,
                 { description: "" },
                 { withCredentials: true }
             );

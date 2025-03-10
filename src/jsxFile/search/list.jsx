@@ -6,7 +6,7 @@ export default function Home({ type, name1, name2, src, refresh, load, setRespon
   const navigate = useNavigate();
   const makeDel = async function (e) {
     try {
-      const response = await axios.post(`http://localhost:8080/deleteHistory/${e.target.title.slice(7)}`, {},
+      const response = await axios.post(`https://instaserver-knen.onrender.com/deleteHistory/${e.target.title.slice(7)}`, {},
         { withCredentials: true });
 
       if (response.data?.message === "Login required.") {

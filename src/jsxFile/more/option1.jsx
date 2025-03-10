@@ -64,7 +64,7 @@ export default function Option1({ setResponseMessage, msg, setOpton, user }) {
             setLod2(true);
 
             try {
-                const result = await axios.post(`http://localhost:8080/usernameExist/${value}`);
+                const result = await axios.post(`https://instaserver-knen.onrender.com/usernameExist/${value}`);
                 setLod2(false);
                 if (result.data.color === "red") {
                     setResponseMessage({ color: "red", msg: "Something went wrong." });
@@ -129,7 +129,7 @@ export default function Option1({ setResponseMessage, msg, setOpton, user }) {
         }
         try {
             setLod2(true); 
-            const response = await axios.post(`http://localhost:8080/changemyusername`,
+            const response = await axios.post(`https://instaserver-knen.onrender.com/changemyusername`,
                 { username: text.username, password: text.password }, { withCredentials: true });
             setLod2(false);
 
@@ -173,7 +173,7 @@ export default function Option1({ setResponseMessage, msg, setOpton, user }) {
                 setLod2(true)
                 try {
                     setLod2(true);
-                    const response = await axios.post(`http://localhost:8080/changemypassword`,
+                    const response = await axios.post(`https://instaserver-knen.onrender.com/changemypassword`,
                         { text }, { withCredentials: true });
                     setLod2(false);
 
@@ -213,7 +213,7 @@ export default function Option1({ setResponseMessage, msg, setOpton, user }) {
         console.log(text.mobile)
         try {
             setLod2(true);
-            const response = await axios.post(`http://localhost:8080/changemymobile`,
+            const response = await axios.post(`https://instaserver-knen.onrender.com/changemymobile`,
                 { mobileno: text.mobile }, { withCredentials: true });
             setLod2(false);
 
@@ -242,7 +242,7 @@ export default function Option1({ setResponseMessage, msg, setOpton, user }) {
     const otohandle = async function () {
         try {
             setLod2(true)
-            const response = await axios.post('http://localhost:8080/otp/change', { email: text.email, name: user.fname },
+            const response = await axios.post('https://instaserver-knen.onrender.com/otp/change', { email: text.email, name: user.fname },
                 { withCredentials: true });
             setLod2(false)
 
@@ -270,7 +270,7 @@ export default function Option1({ setResponseMessage, msg, setOpton, user }) {
         if (text.otp === myotp.otp) {
             try {
                 setLod2(true);
-                const response = await axios.post(`http://localhost:8080/changemyemail`,
+                const response = await axios.post(`https://instaserver-knen.onrender.com/changemyemail`,
                     { emailid: text.email }, { withCredentials: true });
                 setLod2(false);
 

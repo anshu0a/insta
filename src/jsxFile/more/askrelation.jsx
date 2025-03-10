@@ -33,7 +33,7 @@ export default function Relation({ setResponseMessage, setLod2, setOpton2, user 
     const savekro = async () => {
         try {
             setLod2(true)
-            const response = await axios.post('http://localhost:8080/saverelation',
+            const response = await axios.post('https://instaserver-knen.onrender.com/saverelation',
                 { selectedStatus, show }, { withCredentials: true });
 
             if (response.data.message === 'Login required.') {

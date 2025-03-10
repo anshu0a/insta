@@ -17,7 +17,7 @@ export default function saved({userid, setResponseMessage }) {
 
         const fetchsaved = async () => {
             try {
-                const response = await axios.post(`http://localhost:8080/savedlao`,
+                const response = await axios.post(`https://instaserver-knen.onrender.com/savedlao`,
                     {},
                     { withCredentials: true, signal }
                 );

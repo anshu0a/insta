@@ -36,7 +36,7 @@ export default function who({ setResponseMessage, ret,user, news }) {
 
         const konkon = async () => {
             try {
-                const response = await axios.post("http://localhost:8080/konkon/chat", {}, { withCredentials: true, signal });
+                const response = await axios.post("https://instaserver-knen.onrender.com/konkon/chat", {}, { withCredentials: true, signal });
                 if (response.data.message === "Login required.") {
                     navigate("/Login");
                     setResponseMessage(response.data);

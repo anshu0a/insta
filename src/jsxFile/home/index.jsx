@@ -49,7 +49,7 @@ export default function Index({ userData, notimsg, news, setResponseMessage }) {
         const fetchMessages = async () => {
             try {
                 const response = await axios.post(
-                    "http://localhost:8080/konkon/indx",
+                    "https://instaserver-knen.onrender.com/konkon/indx",
                     {},
                     { withCredentials: true, signal: controller.signal }
                 );
@@ -85,7 +85,7 @@ export default function Index({ userData, notimsg, news, setResponseMessage }) {
         const fetchNotifications = async () => {
             try {
                 const response = await axios.post(
-                    `http://localhost:8080/laoNoti/${userData?._id}`,
+                    `https://instaserver-knen.onrender.com/laoNoti/${userData?._id}`,
                     {},
                     { withCredentials: true, signal: controller.signal }
                 );

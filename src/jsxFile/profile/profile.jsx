@@ -23,7 +23,7 @@ export default function profile({ setResponseMessage,news,notimsg }) {
 
         const fetchData = async () => {
             try {
-                const response = await axios.post(`http://localhost:8080/updateData/${user}`,
+                const response = await axios.post(`https://instaserver-knen.onrender.com/updateData/${user}`,
                     {},
                     { withCredentials: true, signal } 
                 );

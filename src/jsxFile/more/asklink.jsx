@@ -22,7 +22,7 @@ export default function link({ setResponseMessage, setLod2, user, tab, setTab })
 
         const fetchData = async () => {
             try {
-                const response = await axios.post('http://localhost:8080/laolink',
+                const response = await axios.post('https://instaserver-knen.onrender.com/laolink',
                     {}, { withCredentials: true, signal, });
 
                 if (response.data.message === 'Login required.') {
@@ -67,7 +67,7 @@ export default function link({ setResponseMessage, setLod2, user, tab, setTab })
             try {
                 setLod2(true);
                 const response = await axios.post(
-                    "http://localhost:8080/addshowlink",
+                    "https://instaserver-knen.onrender.com/addshowlink",
                     { show: checked },
                     { withCredentials: true }
                 );
@@ -105,7 +105,7 @@ export default function link({ setResponseMessage, setLod2, user, tab, setTab })
             setErr({ msg: "Enter a valid link", type: "link" })
         } else {
             try {
-                const response = await axios.post('http://localhost:8080/addlink',
+                const response = await axios.post('https://instaserver-knen.onrender.com/addlink',
                     { name: input.name, link: input.link }, { withCredentials: true, });
 
                 if (response.data.message === 'Login required.') {
@@ -139,7 +139,7 @@ export default function link({ setResponseMessage, setLod2, user, tab, setTab })
             setErr({ msg: "Enter a valid link", type: "elink" })
         } else {
             try {
-                const response = await axios.post(`http://localhost:8080/editlink/${input.id}`,
+                const response = await axios.post(`https://instaserver-knen.onrender.com/editlink/${input.id}`,
                     { name: input.ename, link: input.elink }, { withCredentials: true, });
 
                 if (response.data.message === 'Login required.') {
@@ -169,7 +169,7 @@ export default function link({ setResponseMessage, setLod2, user, tab, setTab })
         try {
             mylink.links = mylink.links.filter((onelink) => onelink._id !== id);
 
-            const response = await axios.post(`http://localhost:8080/deletelink/${id}`,
+            const response = await axios.post(`https://instaserver-knen.onrender.com/deletelink/${id}`,
                 {},
                 { withCredentials: true }
             );

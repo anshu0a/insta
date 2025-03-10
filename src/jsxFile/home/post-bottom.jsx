@@ -40,7 +40,7 @@ export default function PostBottom({ post, user, setResponseMessage, setRes }) {
 
         try {
             const response = await axios.post(
-                `http://localhost:8080/docmt/${post._id}`,
+                `https://instaserver-knen.onrender.com/docmt/${post._id}`,
                 { comment: cmt, rpid: null },
                 {
                     withCredentials: true,

@@ -18,7 +18,7 @@ export default function opton({ setResponseMessage, opt, setOpt, user, userid, s
         try {
             setLod2(true);
 
-            const response = await axios.post('http://localhost:8080/deletestry',
+            const response = await axios.post('https://instaserver-knen.onrender.com/deletestry',
                 { userid, storyid }, { withCredentials: true });
 
             if (response.data.message === 'Login required.') {

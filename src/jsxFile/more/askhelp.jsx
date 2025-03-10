@@ -19,7 +19,7 @@ export default function Relation({ setResponseMessage, setLod2 }) {
 
         const fetchData = async () => {
             try {
-                const response = await axios.post('http://localhost:8080/laohelp',
+                const response = await axios.post('https://instaserver-knen.onrender.com/laohelp',
                     {}, { withCredentials: true, signal, });
 
                 if (response.data.message === 'Login required.') {
@@ -59,7 +59,7 @@ export default function Relation({ setResponseMessage, setLod2 }) {
        
         try {
             setLod2(true)
-            const response = await axios.post('http://localhost:8080/addhelp',
+            const response = await axios.post('https://instaserver-knen.onrender.com/addhelp',
                 { typ, inpdata }, { withCredentials: true });
 
             if (response.data.message === 'Login required.') {
@@ -98,7 +98,7 @@ export default function Relation({ setResponseMessage, setLod2 }) {
             }
             
             setLod2(true)
-            const response = await axios.post(`http://localhost:8080/chghelp/${typ}/${idx}`,
+            const response = await axios.post(`https://instaserver-knen.onrender.com/chghelp/${typ}/${idx}`,
                 { typ, inpdata }, { withCredentials: true });
 
             if (response.data.message === 'Login required.') {

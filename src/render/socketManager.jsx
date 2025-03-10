@@ -12,7 +12,7 @@ function SocketManager({ setUser, userid, children, setNotomsg, setNews }) {
     const fetchUserInfo = async () => {
       try {
         const response = await axios.post(
-          "http://localhost:8080/askforuserid",
+          "https://instaserver-knen.onrender.com/askforuserid",
           {},
           { withCredentials: true }
         );
@@ -35,7 +35,7 @@ function SocketManager({ setUser, userid, children, setNotomsg, setNews }) {
   useEffect(() => {
     if (!socketEnabled || !userid) return;
 
-    const newSocket = io("http://localhost:8080");
+    const newSocket = io("https://instaserver-knen.onrender.com");
 
 
     newSocket.on("connect", () => {

@@ -21,7 +21,7 @@ export default function badge({ data, lagao , setResponseMessage }) {
             setLod2(true);
     
             const result = await axios.post(
-              `http://localhost:8080/fltrData/badge`,
+              `https://instaserver-knen.onrender.com/fltrData/badge`,
               {},
               { withCredentials: true, signal: controller.signal }
             );

@@ -106,7 +106,7 @@ export default function edt4({ data, reload , setResponseMessage}) {
         if (formData.gender.value !== data.gender.value || formData.gender.show !== data.gender.show || forDate !== formData.birthdate.datex || formData.birthdate.img !== data.birthdate.img) {
             try {
                 setLod2(true);
-                const response = await axios.post(`http://localhost:8080/changeGenderBday`, formData,{withCredentials:true});
+                const response = await axios.post(`https://instaserver-knen.onrender.com/changeGenderBday`, formData,{withCredentials:true});
                 setLod2(false);
     
                 if (response.data?.message === "Login required.") {

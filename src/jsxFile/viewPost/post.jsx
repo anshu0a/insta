@@ -32,7 +32,7 @@ export default function post({ postid, userid, setShowpost, setResponseMessage ,
         const fetchData = async () => {
             try {
                 const response = await axios.post(
-                    `http://localhost:8080/laocmt/${postid}`,
+                    `https://instaserver-knen.onrender.com/laocmt/${postid}`,
                     {},
                     { withCredentials: true, signal: controller.signal }
                 );

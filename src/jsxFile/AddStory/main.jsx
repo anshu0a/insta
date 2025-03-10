@@ -234,7 +234,7 @@ export default function Main({ setResponseMessage, user }) {
             formData.append("msg", mydata.msg);
             formData.append("sharewith", mydata.sharewith);
             setLod2(true);
-            const response = await axios.post("http://localhost:8080/addStory", formData, {
+            const response = await axios.post("https://instaserver-knen.onrender.com/addStory", formData, {
                 withCredentials: true,
                 headers: { "Content-Type": "multipart/form-data" },
             });

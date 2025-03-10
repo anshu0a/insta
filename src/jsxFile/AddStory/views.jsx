@@ -16,7 +16,7 @@ export default function views({ setResponseMessage, opt, setOpt, userid, storyid
 
         const fetchData = async () => {
             try {
-                const response = await axios.post('http://localhost:8080/viewsdoplz',
+                const response = await axios.post('https://instaserver-knen.onrender.com/viewsdoplz',
                     { userid, storyid }, { withCredentials: true, signal, });
 
                 if (response.data.message === 'Login required.') {

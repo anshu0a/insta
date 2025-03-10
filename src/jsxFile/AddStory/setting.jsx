@@ -36,7 +36,7 @@ export default function setting({ setResponseMessage, setMydata }) {
     const handleclose = async function () {
 
         try {
-            const response = await axios.post('http://localhost:8080/closefrnd',
+            const response = await axios.post('https://instaserver-knen.onrender.com/closefrnd',
                 {}, { withCredentials: true, });
 
             if (response.data.message === 'Login required.') {
@@ -87,7 +87,7 @@ export default function setting({ setResponseMessage, setMydata }) {
     };
     const closebhezo = async function () {
         try {
-            const response = await axios.post('http://localhost:8080/closebhezo',
+            const response = await axios.post('https://instaserver-knen.onrender.com/closebhezo',
                 { list: final.list }, { withCredentials: true, });
 
             if (response.data.message === 'Login required.') {
@@ -112,7 +112,7 @@ export default function setting({ setResponseMessage, setMydata }) {
         setOpton((pre) => ({ ...pre, is: 3 }))
 
         try {
-            const response = await axios.post('http://localhost:8080/hidelist',
+            const response = await axios.post('https://instaserver-knen.onrender.com/hidelist',
                 {}, { withCredentials: true, });
 
             if (response.data.message === 'Login required.') {
@@ -161,7 +161,7 @@ export default function setting({ setResponseMessage, setMydata }) {
 
     const hidebhezo = async function () {
         try {
-            const response = await axios.post('http://localhost:8080/hidebhezo',
+            const response = await axios.post('https://instaserver-knen.onrender.com/hidebhezo',
                 { list: final2.list }, { withCredentials: true, });
 
             if (response.data.message === 'Login required.') {

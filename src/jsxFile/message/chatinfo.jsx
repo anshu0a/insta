@@ -35,7 +35,7 @@ export default function ChatInfo({ setResponseMessage, user2, news }) {
         const msglao = async () => {
             try {
                 const response = await axios.post(
-                    `http://localhost:8080/chatlao/${user2._id}`,
+                    `https://instaserver-knen.onrender.com/chatlao/${user2._id}`,
                     {},
                     {
                         withCredentials: true,
@@ -108,7 +108,7 @@ export default function ChatInfo({ setResponseMessage, user2, news }) {
                 formData.append("user2", user2._id);
                 formData.append("msg", kyamsg.msg);
 
-                const response = await axios.post(`http://localhost:8080/bhezomsg`,
+                const response = await axios.post(`https://instaserver-knen.onrender.com/bhezomsg`,
                     formData,
                     {
                         withCredentials: true,

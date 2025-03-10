@@ -34,7 +34,7 @@ export default function edt6({ data, reload,setResponseMessage }) {
         debounce(async (value) => {
             if (value !== "") {
                 try {
-                    const result = await axios.post(`http://localhost:8080/badge/${value}`);
+                    const result = await axios.post(`https://instaserver-knen.onrender.com/badge/${value}`);
                     if (result.data.length !== 0) {
                         setSearch(result.data);
 
@@ -157,7 +157,7 @@ export default function edt6({ data, reload,setResponseMessage }) {
         if ((formData.search !== data.badge.msg) && className === "adsh") {
             setLod2(true);
             try {
-                const response = await axios.post(`http://localhost:8080/changeBadge`, formData.badge, { withCredentials: true });
+                const response = await axios.post(`https://instaserver-knen.onrender.com/changeBadge`, formData.badge, { withCredentials: true });
     
                 if (response.data?.message === "Login required.") {
                     setResponseMessage(response.data);

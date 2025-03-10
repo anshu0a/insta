@@ -44,7 +44,7 @@ export default function Optt({ setShowm,setShowpost,  showm, list, setNotilist, 
         const deleteNotification = async () => {
             try {
                 const response = await axios.post(
-                    `http://localhost:8080/dealnoti/${list._id}`,
+                    `https://instaserver-knen.onrender.com/dealnoti/${list._id}`,
                     {},
                     { withCredentials: true, signal: controller.signal }
                 );
@@ -72,7 +72,7 @@ export default function Optt({ setShowm,setShowpost,  showm, list, setNotilist, 
         const sendResponse = async () => {
             try {
                 const response = await axios.post(
-                    `http://localhost:8080/addNoti/${list.sender._id}`,
+                    `https://instaserver-knen.onrender.com/addNoti/${list.sender._id}`,
                     { msg: respo.msg },
                     { withCredentials: true, signal: controller.signal }
                 );

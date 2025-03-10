@@ -18,7 +18,7 @@ export default function suggestion({ setResponseMessage, setLod2, user }) {
 
         const fetchData = async () => {
             try {
-                const response = await axios.post('http://localhost:8080/laosuggest',
+                const response = await axios.post('https://instaserver-knen.onrender.com/laosuggest',
                     {}, { withCredentials: true, signal, });
 
                 if (response.data.message === 'Login required.') {
@@ -58,7 +58,7 @@ export default function suggestion({ setResponseMessage, setLod2, user }) {
     const sendsuggestion = async (typ) => {
         try {
             setLod2(true)
-            const response = await axios.post('http://localhost:8080/suggestion', { inp }, { withCredentials: true });
+            const response = await axios.post('https://instaserver-knen.onrender.com/suggestion', { inp }, { withCredentials: true });
 
             if (response.data.message === 'Login required.') {
                 await navigate('/Login');
@@ -97,7 +97,7 @@ export default function suggestion({ setResponseMessage, setLod2, user }) {
                 );
             }
 
-            const response = await axios.post(`http://localhost:8080/chgsuggestion/${typ}/${idx}`,
+            const response = await axios.post(`https://instaserver-knen.onrender.com/chgsuggestion/${typ}/${idx}`,
                 {}, { withCredentials: true });
 
             if (response.data.message === 'Login required.') {

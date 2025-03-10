@@ -185,7 +185,7 @@ export default function ViewStory({ setResponseMessage, user }) {
                 setHasSentRequest(true); 
     
                 const response = await axios.post(
-                    "http://localhost:8080/seenstory",
+                    "https://instaserver-knen.onrender.com/seenstory",
                     { userid, storyid },
                     { withCredentials: true, signal }
                 );
@@ -213,7 +213,7 @@ export default function ViewStory({ setResponseMessage, user }) {
     const likeordislike = async () => {
         setInp((pre) => ({ ...pre, like: !pre.like }));
         try {
-            const response = await axios.post(`http://localhost:8080/likestory/${!inp.like}`, { userid, storyid }, { withCredentials: true });
+            const response = await axios.post(`https://instaserver-knen.onrender.com/likestory/${!inp.like}`, { userid, storyid }, { withCredentials: true });
 
             if (response.data.message === 'Login required.') {
                 await navigate('/Login');
@@ -243,7 +243,7 @@ export default function ViewStory({ setResponseMessage, user }) {
 
         setInp((pre) => ({ ...pre, msg: "" }))
         try {
-            const response = await axios.post(`http://localhost:8080/commentonstory`, { userid, storyid, msg: inp.msg }, { withCredentials: true });
+            const response = await axios.post(`https://instaserver-knen.onrender.com/commentonstory`, { userid, storyid, msg: inp.msg }, { withCredentials: true });
 
             if (response.data.message === 'Login required.') {
                 await navigate('/Login');

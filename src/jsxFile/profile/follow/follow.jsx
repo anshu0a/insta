@@ -14,7 +14,7 @@ export default function Follow({ hisid,img, setResponseMessage }) {
         const fetchData = async () => {
             try {
                 const response = await axios.post(
-                    `http://localhost:8080/kyafollow/${hisid}`,
+                    `https://instaserver-knen.onrender.com/kyafollow/${hisid}`,
                     {},
                     { withCredentials: true, signal }
                 );
@@ -50,7 +50,7 @@ export default function Follow({ hisid,img, setResponseMessage }) {
     const followsmjho = async () => {
         try {
             const response = await axios.post(
-                `http://localhost:8080/followme/${hisid}`,
+                `https://instaserver-knen.onrender.com/followme/${hisid}`,
                 {},
                 { withCredentials: true }
             );

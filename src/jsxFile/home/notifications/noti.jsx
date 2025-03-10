@@ -38,7 +38,7 @@ export default function Noti({ notimsg, setResponseMessage, setRednoti, setNoti,
         const fetchData = async () => {
             try {
                 const response = await axios.post(
-                    `http://localhost:8080/laoNoti/${userid}`,
+                    `https://instaserver-knen.onrender.com/laoNoti/${userid}`,
                     {},
                     { withCredentials: true, signal: controller.signal }
                 );
@@ -96,7 +96,7 @@ export default function Noti({ notimsg, setResponseMessage, setRednoti, setNoti,
 
         try {
             const response = await axios.post(
-                `http://localhost:8080/notif/${type}/${notiid}`,
+                `https://instaserver-knen.onrender.com/notif/${type}/${notiid}`,
                 {},
                 { withCredentials: true }
             );

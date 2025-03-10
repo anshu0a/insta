@@ -43,7 +43,7 @@ export default function edtPro({ setResponseMessage }) {
         const fetchdata = async () => {
             try {
 
-                const response = await axios.post(`http://localhost:8080/updateData/${user}`,
+                const response = await axios.post(`https://instaserver-knen.onrender.com/updateData/${user}`,
                     {},
                     { withCredentials: true }
                 );
@@ -101,7 +101,7 @@ export default function edtPro({ setResponseMessage }) {
 
         try {
             setLod2(true);
-            const response = await axios.post( 'http://localhost:8080/updatePic',
+            const response = await axios.post( 'https://instaserver-knen.onrender.com/updatePic',
                 formData,
                 {
                     withCredentials: true,

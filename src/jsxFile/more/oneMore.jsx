@@ -20,7 +20,7 @@ export default function onemore({ setResponseMessage, src, msg, color, setOpton,
     const loginanother = async function (typ) {
         try {
 
-            const response = await axios.post(`http://localhost:8080/logoutuser`,
+            const response = await axios.post(`https://instaserver-knen.onrender.com/logoutuser`,
                 {},
                 { withCredentials: true }
             );

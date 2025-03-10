@@ -120,7 +120,7 @@ export default function crtpost({ setCrt, setSkolo, setResponseMessage }) {
             formData.append('loc', info.loc);
             formData.append('des', info.des);
 
-            const response = await axios.post('http://localhost:8080/postkro',
+            const response = await axios.post('https://instaserver-knen.onrender.com/postkro',
                 formData,
                 {
                     headers: {

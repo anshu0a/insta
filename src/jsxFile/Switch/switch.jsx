@@ -56,7 +56,7 @@ export default function Switch({ setResponseMessage }) {
 
         try {
             setLod2(true)
-            const response = await axios.post('http://localhost:8080/checkUser', { username, password }, {
+            const response = await axios.post('https://instaserver-knen.onrender.com/checkUser', { username, password }, {
                 withCredentials: true,
             });
 

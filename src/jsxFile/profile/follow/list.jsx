@@ -16,7 +16,7 @@ export default function FollowList({ user2id, setResponseMessage }) {
         const fetchData = async () => {
             try {
                 const response = await axios.post(
-                    `http://localhost:8080/laofollow/${user2id}`,
+                    `https://instaserver-knen.onrender.com/laofollow/${user2id}`,
                     {},
                     { withCredentials: true, signal }
                 );

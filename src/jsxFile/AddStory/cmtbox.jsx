@@ -16,7 +16,7 @@ export default function cmtbox({ setResponseMessage, userid, fname, storyid, use
 
         const markStorySeen = async () => {
             try {
-                const response = await axios.post('http://localhost:8080/fetchstorycomment', { userid, storyid }, { withCredentials: true, signal });
+                const response = await axios.post('https://instaserver-knen.onrender.com/fetchstorycomment', { userid, storyid }, { withCredentials: true, signal });
 
                 if (response.data.message === 'Login required.') {
                     await navigate('/Login');

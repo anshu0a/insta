@@ -13,7 +13,7 @@ export default function Onenoti({ setResponseMessage, user }) {
 
         const fetchData = async () => {
             try {
-                const response = await axios.post('http://localhost:8080/fetchStory',
+                const response = await axios.post('https://instaserver-knen.onrender.com/fetchStory',
                     {}, { withCredentials: true, signal });
 
                 if (response.data.message === 'Login required.') {

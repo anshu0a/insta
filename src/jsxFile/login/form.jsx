@@ -72,7 +72,7 @@ export default function Form({ setResponseMessage }) {
         } else {
             try {
                 setLod2(true);
-                const response = await axios.post('http://localhost:8080/checkUser', info, {
+                const response = await axios.post('https://instaserver-knen.onrender.com/checkUser', info, {
                     withCredentials: true,
                 });
                 setLod2(false);

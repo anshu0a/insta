@@ -27,7 +27,7 @@ export default function threedot({ setResponseMessage, user, post, setRes }) {
         try {
             setLod2(true)
             const mmssgg = "I am not happy with this post as it does not meet my expectations in terms of content, clarity, or overall quality."
-            const response = await axios.post('http://localhost:8080/addreport', { title: "post", report: mmssgg, postid: post._id },
+            const response = await axios.post('https://instaserver-knen.onrender.com/addreport', { title: "post", report: mmssgg, postid: post._id },
                 { withCredentials: true });
 
             if (response.data.message === 'Login required.') {
@@ -58,7 +58,7 @@ export default function threedot({ setResponseMessage, user, post, setRes }) {
         try {
             setLod2(true);
             const response = await axios.post(
-                `http://localhost:8080/editpostbio/${typ}/${post._id}`,
+                `https://instaserver-knen.onrender.com/editpostbio/${typ}/${post._id}`,
                 { description: divon.description },
                 { withCredentials: true }
             );
@@ -93,7 +93,7 @@ export default function threedot({ setResponseMessage, user, post, setRes }) {
             setLod2(true);
 
             const response = await axios.post(
-                "http://localhost:8080/deletepost",
+                "https://instaserver-knen.onrender.com/deletepost",
                 { postid },
                 { withCredentials: true }
             );

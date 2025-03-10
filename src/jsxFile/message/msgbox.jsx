@@ -46,7 +46,7 @@ export default function Msgbox({ setResponseMessage, news, user}) {
       if (user !== undefined) {
         try {
           const response = await axios.post(
-            "http://localhost:8080/checkUsername",
+            "https://instaserver-knen.onrender.com/checkUsername",
             { username: user },
             { withCredentials: true, signal }
           );

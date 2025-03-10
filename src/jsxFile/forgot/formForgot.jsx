@@ -100,7 +100,7 @@ export default function Form({ setResponseMessage }) {
             setError((old) => { return { ...old, emailError: "Email is not valid" } })
         } else {
             try {
-                const response = await axios.post(`http://localhost:8080/forgot/${requests}`, { info });
+                const response = await axios.post(`https://instaserver-knen.onrender.com/forgot/${requests}`, { info });
 
                 if (response.data.color === "red") {
                     setError((old) => { return { ...old, [errortype]: response.data.message } })
@@ -123,7 +123,7 @@ export default function Form({ setResponseMessage }) {
         } else if (letter === "email id") {
             try {
                 setLod2(true)
-                const response = await axios.post('http://localhost:8080/otp/change', { email: user?.selected?.email, name: user?.selected?.fname },
+                const response = await axios.post('https://instaserver-knen.onrender.com/otp/change', { email: user?.selected?.email, name: user?.selected?.fname },
                     { withCredentials: true });
                 setLod2(false)
                 setResponseMessage(response.data);
@@ -168,7 +168,7 @@ export default function Form({ setResponseMessage }) {
         } else {
             try {
                 setLod2(true)
-                const response = await axios.post('http://localhost:8080/changepassword', { newpass: info.newpass, newpass2: info.newpass2, _id: user?.selected?._id }
+                const response = await axios.post('https://instaserver-knen.onrender.com/changepassword', { newpass: info.newpass, newpass2: info.newpass2, _id: user?.selected?._id }
                     , { withCredentials: true });
                 setLod2(false)
                 setResponseMessage(response.data);

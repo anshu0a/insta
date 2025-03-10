@@ -168,7 +168,7 @@ export default function list({ setResponseMessage }) {
         try {
           setLod2(true);
 
-          const result = await axios.post(`http://localhost:8080/applyFilter`,
+          const result = await axios.post(`https://instaserver-knen.onrender.com/applyFilter`,
             choose,
             { withCredentials: true, signal: controller.signal }
           );

@@ -32,7 +32,7 @@ export default function Search({ setResponseMessage }) {
             if (value.trim() !== "") {
                 try {
                     setLod2(true);
-                    const result = await axios.post(`http://localhost:8080/search/${value}`
+                    const result = await axios.post(`https://instaserver-knen.onrender.com/search/${value}`
                     );
                     setLod2(false);
                     if (result.data.length > 0) {
@@ -67,7 +67,7 @@ export default function Search({ setResponseMessage }) {
     const fetchHistory = useCallback(async () => {
         try {
             setLod2(true);
-            const response = await axios.post("http://localhost:8080/searchHistory",
+            const response = await axios.post("https://instaserver-knen.onrender.com/searchHistory",
                 {},
                 { withCredentials: true }
             );
@@ -109,7 +109,7 @@ export default function Search({ setResponseMessage }) {
 
         try {
             setLod2(true);
-            const response = await axios.post(`http://localhost:8080/addHistory/${encodeURIComponent(input)}`,
+            const response = await axios.post(`https://instaserver-knen.onrender.com/addHistory/${encodeURIComponent(input)}`,
                 {},
                 { withCredentials: true }
             );

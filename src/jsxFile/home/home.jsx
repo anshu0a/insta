@@ -22,7 +22,7 @@ export default function Home({ setResponseMessage, news, notimsg }) {
 
         const fetchData = async () => {
             try {
-                const response = await axios.post('http://localhost:8080/postdo',
+                const response = await axios.post('https://instaserver-knen.onrender.com/postdo',
                     {}, { withCredentials: true, signal, });
 
                 if (response.data.message === 'Login required.') {

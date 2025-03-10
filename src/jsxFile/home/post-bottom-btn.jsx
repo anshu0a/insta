@@ -30,7 +30,7 @@ export default function PostBottomBtn({ post, userid, type, setCmton, setRespons
 
         try {
             const response = await axios.post(
-                `http://localhost:8080/dolike/${post._id}`,
+                `https://instaserver-knen.onrender.com/dolike/${post._id}`,
                 {},
                 {
                     withCredentials: true,
@@ -69,7 +69,7 @@ export default function PostBottomBtn({ post, userid, type, setCmton, setRespons
 
         try {
             const response = await axios.post(
-                `http://localhost:8080/savepost/${post._id}`,
+                `https://instaserver-knen.onrender.com/savepost/${post._id}`,
                 {},
                 {
                     withCredentials: true,

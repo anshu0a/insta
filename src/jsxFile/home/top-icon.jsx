@@ -23,7 +23,7 @@ export default function topIcon({userData, notimsg, setResponseMessage}) {
         const fetchData = async () => {
             try {
                 const response = await axios.post(
-                    `http://localhost:8080/laoNoti/${userData?._id}`,
+                    `https://instaserver-knen.onrender.com/laoNoti/${userData?._id}`,
                     {},
                     { withCredentials: true, signal: controller.signal }
                 );

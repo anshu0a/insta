@@ -33,7 +33,7 @@ export default function name({ data, reload, setResponseMessage }) {
         debounce(async (value) => {
             setLod2(true);
             try {
-                const result = await axios.post(`http://localhost:8080/usernameExist/${value}`);
+                const result = await axios.post(`https://instaserver-knen.onrender.com/usernameExist/${value}`);
                 setLod2(false);
 
                 if (result.data.exists) {
@@ -117,7 +117,7 @@ export default function name({ data, reload, setResponseMessage }) {
 
         try {
             setLod2(true);
-            const response = await axios.post(`http://localhost:8080/updateName`, formData, {
+            const response = await axios.post(`https://instaserver-knen.onrender.com/updateName`, formData, {
                 withCredentials: true,
             });
             setLod2(false);
