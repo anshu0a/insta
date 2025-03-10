@@ -5,16 +5,13 @@ import App from './App.jsx';
 import axios from 'axios';
 import './index.css';
 
-
-axios.defaults.baseURL = "https://instaserver-knen.onrender.com"; 
 axios.defaults.withCredentials = true;
 axios.defaults.headers.common["Content-Type"] = "application/json";
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <App /> 
+      <App />
     </BrowserRouter>
   </StrictMode>
 );

@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: "dist", // Default output folder
-    emptyOutDir: true, // Ensures clean build
+    outDir: "dist",
+    emptyOutDir: true,
   },
   server: {
     port: 5173,
@@ -14,5 +14,5 @@ export default defineConfig({
   preview: {
     port: 4173,
   },
-  base: "./", // Ensures correct asset paths
+  base: "/", // Ensures correct asset paths
 });
