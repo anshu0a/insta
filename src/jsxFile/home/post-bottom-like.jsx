@@ -1,4 +1,4 @@
-import "../../cssFile/home-css/post-Bottom-like.css";
+import "../../cssFile/home-css/post-bottom-like.css";
 
 export default function PostBottomLike({ post  }) {
 
