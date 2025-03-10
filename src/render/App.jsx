@@ -40,7 +40,7 @@ function App() {
           <Route path="/search" element={<Search setResponseMessage={setResponseMessage} />} />
           <Route path="/filter" element={<List setResponseMessage={setResponseMessage} />} />
           <Route path="/profile/:user" element={<Profile notimsg={notimsg} news={news} setResponseMessage={setResponseMessage} />} />
-          <Route path="/EditProfile/:user" element={<Edit setResponseMessage={setResponseMessage} />} />
+          <Route path="/editProfile/:user" element={<Edit setResponseMessage={setResponseMessage} />} />
           <Route path="/reels" element={<Reels user={user} notimsg={notimsg} news={news} setResponseMessage={setResponseMessage} />} />
           <Route path="/messages" element={<Message notimsg={notimsg} news={news} setResponseMessage={setResponseMessage} />} />
           <Route path="/Messages/:user" element={<Message notimsg={notimsg} news={news} setResponseMessage={setResponseMessage} />} />

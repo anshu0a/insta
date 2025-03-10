@@ -4,17 +4,17 @@ import Crt from "./crt/crt.jsx";
 import Notifications from "./notifications/noti.jsx";
 import { handleImageError } from "../../../utils/handleImg.js";
 
-export default function One({ name, userid, src, pic,notimsg, setNotix, userpic, setResponseMessage, alert }) {
+export default function One({ name, userid, src, pic, notimsg, setNotix, userpic, setResponseMessage, alert }) {
     const [crt, setCrt] = useState(false);
     const [noti, setNoti] = useState(false);
     const [rednoti, setRednoti] = useState(false)
 
     useEffect(() => {
-        if(setNotix){
+        if (setNotix) {
             setNotix(rednoti ? 1 : 0);
         }
     }, [rednoti]);
-    
+
 
     useEffect(() => {
         if (crt || noti) {
@@ -62,7 +62,10 @@ export default function One({ name, userid, src, pic,notimsg, setNotix, userpic,
 
                 </>
             ) : (
-                <a href={name.startsWith("@") ? `/Profile/${name.slice(1)}` : `/${name}`} className={`one ${name}`} title={name} >
+                <a href={name.startsWith("@") ? `/profile/${name.slice(1)}` : `/${name.toLowerCase()}`}
+                    className={`one ${name}`}
+                    title={name}
+                >
                     <div className="outimg">
                         <img src={src} className={!pic ? "imgpic" : null} style={pic ? { borderRadius: "50%" } : {}} onError={handleImageError} />
                         {alert?.startsWith("msg") && (
