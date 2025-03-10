@@ -32,7 +32,7 @@ function App() {
       <Flash mymsg={responseMessage?.message} color={responseMessage?.color} />
       <SocketManager userid={user?._id} setUser={setUser} setNotomsg={setNotomsg} setNews={setNews}>
         <Routes>
-          <Route path="/" element={<h1>Welcome to the Main Page</h1>} />
+          <Route path="/" element={<Home notimsg={notimsg} news={news} setResponseMessage={setResponseMessage} />} />
           <Route path="/home" element={<Home notimsg={notimsg} news={news} setResponseMessage={setResponseMessage} />} />
           <Route path="/forgot/:whereigo" element={<Forgot setResponseMessage={setResponseMessage} />} />
           <Route path="/login" element={<Login setResponseMessage={setResponseMessage} />} />
