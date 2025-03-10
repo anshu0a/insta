@@ -40,15 +40,15 @@ function App() {
           <Route path="/search" element={<Search setResponseMessage={setResponseMessage} />} />
           <Route path="/filter" element={<List setResponseMessage={setResponseMessage} />} />
           <Route path="/profile/:user" element={<Profile notimsg={notimsg} news={news} setResponseMessage={setResponseMessage} />} />
-          <Route path="/editProfile/:user" element={<Edit setResponseMessage={setResponseMessage} />} />
+          <Route path="/editprofile/:user" element={<Edit setResponseMessage={setResponseMessage} />} />
           <Route path="/reels" element={<Reels user={user} notimsg={notimsg} news={news} setResponseMessage={setResponseMessage} />} />
           <Route path="/messages" element={<Message notimsg={notimsg} news={news} setResponseMessage={setResponseMessage} />} />
-          <Route path="/Messages/:user" element={<Message notimsg={notimsg} news={news} setResponseMessage={setResponseMessage} />} />
+          <Route path="/messages/:user" element={<Message notimsg={notimsg} news={news} setResponseMessage={setResponseMessage} />} />
           <Route path="*" element={<Notfound setResponseMessage={setResponseMessage} />} />
           <Route path="/more" element={<More user={user} notimsg={notimsg} news={news} setResponseMessage={setResponseMessage} />} />
-          <Route path="/AddStory" element={<AddStory user={user} setResponseMessage={setResponseMessage} />} />
+          <Route path="/addstory" element={<AddStory user={user} setResponseMessage={setResponseMessage} />} />
           <Route path="/story/:userid/:storyid" element={<ViewStory user={user} setResponseMessage={setResponseMessage} />} />
-          <Route path="/Switch" element={<Switch setResponseMessage={setResponseMessage} />} />
+          <Route path="/switch" element={<Switch setResponseMessage={setResponseMessage} />} />
           <Route path="/call" element={<Call setResponseMessage={setResponseMessage} />} />
         </Routes>
       </SocketManager>
