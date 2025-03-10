@@ -1,4 +1,4 @@
-import "../../cssFile/home-css/post-Top.css"
+import "../../cssFile/home-css/post-top.css";
 
 import { timedo } from '../../../utils/timedo.js'
 import { handleImageError } from "../../../utils/handleImg.js"
