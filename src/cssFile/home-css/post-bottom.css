@@ -1,0 +1,58 @@
+.postBottom,
+.postBottom >.cmtbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postBottom {
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(100% - 10px);
+    padding:10px 5px 5px 5px;
+}
+.postBottom >.comment{
+    cursor: pointer;
+    width:100%;
+    margin:0;
+    font-size: .9em;
+    color:rgb(170, 170, 170);
+}
+
+.postBottom >.cmtbox{
+    gap:10px;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.postBottom >.cmtbox>.addCmt{
+    font-family: inherit;
+    opacity: .5;
+    padding: 5px 0;
+    resize: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    font-size: 14px;
+    flex: 1 1 100px;
+        
+}
+.postBottom >.cmtbox>.addCmt:hover{
+    opacity: 1;
+       
+}
+
+.postBottom >.cmtbox>.addCmt::-webkit-scrollbar{
+    width:5px;
+    background: rgba(0, 0, 0, 0.076);
+    border-radius: 10px;
+}
+.postBottom >.cmtbox>.addCmt::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 10px;
+}
+.postBottom >.cmtbox>.postbtn{
+    color:rgb(0, 157, 255);
+    cursor: pointer;
+}

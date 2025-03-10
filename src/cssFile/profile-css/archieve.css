@@ -1,0 +1,131 @@
+.myarchx,
+.myarchx>.indiv,
+.myarchx>.indiv>h3,
+.myarchx>.indiv>.boxu,
+.myarchx>.indiv>.boxu>.one1,
+.myarchx>.indiv>.boxu>.nopost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.myarchx {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.818);
+}
+
+.myarchx>.indiv {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: calc(95% - 40px);
+    width: 400px;
+    aspect-ratio: 1/1;
+    animation: zoomhoja .5s ease;
+    background-color: rgb(255, 255, 255);
+    justify-content: flex-start;
+
+}
+
+@keyframes zoomhoja {
+    0% {
+        scale: 0;
+    }
+
+    80% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+.myarchx>.indiv>h3 {
+    margin-top: 0;
+    justify-content: flex-start;
+    flex-direction: row;
+    color: rgb(70, 70, 70);
+    gap: 5px;
+    width: 100%
+}
+
+.myarchx>.indiv>h3>img {
+    width: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    background-color: rgb(70, 70, 70);
+}
+
+.myarchx>.indiv>.boxu {
+    width: calc(100% - 15px);
+    padding: 0 5px 0 10px;
+    height: calc(100% - 50px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    gap: .5%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.myarchx>.indiv>.boxu::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(255, 0, 0, 0);
+}
+
+.myarchx>.indiv>.boxu::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.myarchx>.indiv>.boxu>.one1 {
+    position: relative;
+    width: 33%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.myarchx>.indiv>.boxu>.one1>img {
+    transition: .2s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+
+}
+.myarchx>.indiv>.boxu>.one1:hover>img {
+    filter: brightness(.5);
+}
+
+.myarchx>.indiv>.boxu>.one1>svg {
+    cursor: pointer;
+    transform: rotateZ(180deg);
+    transition: .2s ease;
+    width: 25px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+}
+.myarchx>.indiv>.boxu>.one1:hover>svg {
+    opacity: 1;
+}
+
+.myarchx>.indiv>.boxu>.nopost {
+    width: 100%;
+    height: 80%;
+
+}
+.myarchx>.indiv>.boxu>.nopost >p{
+    font-size: 500;
+}

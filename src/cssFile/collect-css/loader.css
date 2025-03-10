@@ -1,0 +1,160 @@
+/* Loader Main Container */
+.loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: 400% 400%;
+    /* animation: bgcg 1.5s ease infinite; */
+    z-index: 10;
+}
+
+@keyframes bgcg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.anim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 3px;
+    height: 15px;
+    border-radius: 3px;
+    animation: bounce 1.5s infinite ease-in-out, cgcl 1.5s infinite ease-in-out;
+}
+
+.circle:nth-child(1) {
+    background: #ff4e50;
+    animation-delay: 0s;
+}
+
+.circle:nth-child(2) {
+    background: #fc913a;
+    animation-delay: 0.2s;
+}
+
+.circle:nth-child(3) {
+    background: #f9d423;
+    animation-delay: 0.4s;
+}
+
+.circle:nth-child(4) {
+    background: #4caf50;
+    animation-delay: 0.6s;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes cgcl {
+
+    0%,
+    100% {
+        background-color: #ff0084;
+    }
+
+    25% {
+        background-color: #ff4e50;
+    }
+
+    50% {
+        background-color: #fc913a;
+    }
+
+    75% {
+        background-color: #f9d423;
+    }
+}
+
+.text,
+.text+p {
+    font-size: 15px;
+    color: #1f5d00;
+    text-align: center;
+    margin-top: 10px;
+    animation: fadeIn 1.5s infinite ease-in-out alternate;
+}
+
+.text+b {
+    margin: 0;
+    color: rgb(202, 202, 202);
+    animation: fadeIn 1.5s infinite 3s ease-in-out alternate;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ______________________________________________loader 2 ____________ */
+.loader2 {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000005b;
+
+}
+.loader2 > svg {
+    height: 50px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.479));
+    aspect-ratio: 1/1;
+    animation: rotateScale 1.5s infinite ease-in-out;
+}
+
+@keyframes rotateScale {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(90deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1);
+    }
+    75% {
+        transform: rotate(270deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}

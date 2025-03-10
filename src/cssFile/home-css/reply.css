@@ -1,0 +1,35 @@
+.allcmt>.actmsg>.repl,
+.allcmt>.actmsg>.repl>.gsg{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.allcmt>.actmsg>.repl {
+
+    flex-direction: column;
+    gap: 5px;
+    width: calc(100% - 35px);
+    padding:10px 0 0 35px ;
+}
+.allcmt>.actmsg>.repl>.gsg{
+    width:100%;
+    gap:5px;
+    flex-direction: row;
+}
+.allcmt>.actmsg>.repl>.gsg>.lsjh{
+    width:40%;
+    max-width: 40px;
+    border-top:1px solid rgb(105, 105, 105);
+}
+
+.allcmt>.actmsg>.repl>.gsg>.brifreply {
+    margin: 0;
+    font-size: 10px;
+    cursor: pointer;
+    color: rgb(165, 165, 165)
+}
+
+
+.allcmt>.actmsg>.repl>.gsg>.brifreply:hover {
+    color: rgb(0, 166, 255)
+}

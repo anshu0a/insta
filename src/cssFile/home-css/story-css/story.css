@@ -1,0 +1,79 @@
+.mystory,
+.mystory>.onebox1,
+.mystory>.onebox1>.outimgg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.mystory {
+    width: calc(100% - 50px);
+    padding: 20px 25px;
+    overflow-x: scroll;
+    gap: 25px;
+    justify-content: flex-start;
+}
+
+.mystory::-webkit-scrollbar {
+    display: none;
+}
+
+.mystory>.onebox1 {
+    flex-direction: column;
+}
+
+.mystory>.onebox1>.outimgg {
+    position: relative;
+    width: 70px;
+    aspect-ratio: 1/1;
+}
+
+.mystory>.onebox1>.outimgg>.pers {
+    cursor: pointer;
+    transition: .15s ease;
+    width: 61px;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border: 2px solid transparent;
+    padding: 2.5px;
+
+}
+
+.mystory>.onebox1>.outimgg>.stortexist {
+    background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #4b007c, #009db9, #00b168) border-box;
+}
+
+.mystory>.onebox1>.outimgg>.addme {
+    width: 20px;
+    cursor: pointer;
+    padding: 2px 2px 2px 2px;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.mystory>.onebox1>.outimgg>.persseen {
+    background: linear-gradient(white, white) padding-box, linear-gradient(135deg, rgba(0, 189, 173, 0.3), rgba(74, 0, 81, 0.3), rgba(0, 161, 156, 0.3)) border-box;
+}
+
+.mystory>.onebox1>.outimgg>.pers:hover {
+    scale: .92;
+}
+
+.mystory>.onebox1>.namer {
+    cursor: pointer;
+    margin: 0;
+    color: rgb(85, 85, 85);
+    font-size: 13px;
+}
+
+.mystory>.onebox1>.namer:hover {
+    color: rgb(0, 157, 255);
+}

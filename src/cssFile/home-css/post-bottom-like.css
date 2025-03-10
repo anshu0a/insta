@@ -1,0 +1,54 @@
+.PostBottomLike,
+.PostBottomLike>.outimgdiv,
+.PostBottomLike>.outimgdiv>.imgbox {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PostBottomLike {
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.PostBottomLike>.outimgdiv {
+    flex-direction: row-reverse;
+}
+
+.PostBottomLike>.outimgdiv>.imgbox {
+    position: relative;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.PostBottomLike>.outimgdiv>.imgbox:nth-child(1) {
+    left: -5px;
+}
+
+.PostBottomLike>.outimgdiv>.imgbox:nth-child(2) {
+    left: 5px;
+}
+
+.PostBottomLike>.outimgdiv>.imgbox:nth-child(3) {
+    left: 15px;
+}
+
+.PostBottomLike>.outimgdiv>.imgbox>img {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 17px;
+}
+
+.PostBottomLike>.like {
+    margin: 0;
+    font-size: .8em;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(94, 94, 94)
+}

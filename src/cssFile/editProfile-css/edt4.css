@@ -1,0 +1,120 @@
+.edt4,
+.gender,
+.showon,
+.edt5,
+.allicn,
+.war2,
+.outwar2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.edt4 {
+    border-radius: 20px;
+    width: calc(100% - 90px);
+    max-width: 550px;
+    padding: 20px;
+    gap: 10px;
+    background-color: rgb(245, 245, 245);
+    align-items: flex-start;
+}
+
+.edt4>p,
+.edt5>p {
+    align-self: flex-start;
+    font-weight: 600;
+    margin: 0;
+    color: rgb(0, 101, 101)
+}
+
+.gender {
+    align-items: flex-start;
+    gap: 5px
+}
+
+.showon {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.showon>label {
+    color: rgb(150, 150, 150);
+}
+
+.edt5 {
+    width: 100%;
+    gap: 15px;
+}
+
+.allicn {
+    user-select: none;
+    gap: 10px;
+    width: calc(100% - 15px);
+    padding: 10px;
+    padding-left: 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 140px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.allicn::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.allicn::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 61, 61);
+    border-radius: 10px;
+}
+
+.allicn>img {
+    object-fit: contain;
+    object-position: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    border:1px solid rgb(235, 235, 235);
+    box-shadow: 2px 2px 5px rgb(233, 233, 233);
+}
+.allicn>img:hover{
+    transition: .2s;
+    box-shadow: inset 1px 1px 10px rgb(194, 194, 194);
+}
+
+.outwar2 {
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 50px);
+    max-width: 550px;
+    margin:0 0 20px 0 ;
+
+}
+
+.war2 {
+    flex-direction: row;
+    gap: 5px;
+}
+
+.war2>p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.outwar2 .save {
+    background-color: rgb(227, 255, 242);
+    color: rgb(0, 234, 101);
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.outwar2 .save:hover {
+    background-color: rgb(202, 255, 230);
+    color: rgb(0, 171, 100);
+}

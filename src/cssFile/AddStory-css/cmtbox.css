@@ -1,0 +1,144 @@
+.viewstory6>.cmtbox6,
+.viewstory6>.cmtbox6>.inbox>.allcmtbox,
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser,
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser>.forpic,
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser>.mor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.viewstory6>.cmtbox6 {
+    background-color: rgba(0, 0, 0, 0.731);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.viewstory6>.cmtbox6>.inbox {
+    text-align: start;
+    background-color: white;
+    color: rgb(48, 48, 48);
+    padding: 20px;
+    max-width: calc(100% - 50px);
+    max-height: 80vh;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.viewstory6>.cmtbox6>.inbox>h3 {
+    user-select: none;
+    margin: 0;
+
+}
+
+.viewstory6>.cmtbox6>.inbox>p {
+    user-select: none;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(199, 199, 199);
+}
+
+.viewstory6>.cmtbox6>.inbox>.allcmtbox {
+    width: calc(100% - 5px);
+    height: calc(100% - 70px);
+    justify-content: flex-start;
+    padding: 5px 5px 5px 0;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>p{
+    width:100%;
+    text-align: center;
+    color:rgb(216, 216, 216)
+}
+
+.viewstory6>.cmtbox6>.inbox>.allcmtbox::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(255, 255, 255, 0);
+}
+
+.viewstory6>.cmtbox6>.inbox>.allcmtbox::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgb(0, 0, 0);
+}
+
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser {
+    transition: .2s ease;
+    width: calc(100% - 10px);
+    padding:10px 5px;
+    flex-direction: row;
+    gap: 5px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser:hover {
+    background-color: aliceblue;
+}
+
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser>.forpic {
+    cursor: pointer;
+    width: 35px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser>.forpic>img {
+    transition: .2s ease;
+    width: 90%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser>.forpic:hover>img {
+    width: 100%;
+}
+
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser>.middle {
+    width: calc(100% - 70px);
+}
+
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser>.middle>p,
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser>.middle>p>a {
+    width: 100%;
+    word-wrap: break-word;
+    margin: 0;
+    font-size: 14px;
+    color: rgb(0, 149, 255)
+}
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser>.middle>p>span{
+    font-size: 10px;
+    margin-left: 5px;
+    font-weight: 500;
+    color:rgb(197, 197, 197);
+}
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser>.middle>p+p {
+    padding:0 5px ;
+    width:calc(100% - 10px);
+    font-size: 16px;
+    color: rgb(73, 73, 73)
+}
+
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser>.mor {
+    cursor: pointer;
+    width: 25px;
+    aspect-ratio: 1/2;
+    filter: brightness();
+}
+
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser>.mor>img {
+    width: 18px;
+    aspect-ratio: 1/1;
+    transition: .1s ease;
+}
+
+.viewstory6>.cmtbox6>.inbox>.allcmtbox>.oneuser>.mor:hover>img {
+    width: 22px;
+}

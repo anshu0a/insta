@@ -1,0 +1,41 @@
+.msgyy {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.allmsg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    width: calc(100% - 209px);
+}
+
+
+
+
+/* ________________________________________tab____________________________________________ */
+@media(max-width:900px) {
+    .allmsg {
+        width: calc(100% - 68px)
+    }
+}
+
+/* ____________________________________phone______________________________________________________ */
+@media(max-width:500px) {
+
+    .msgyy {
+        flex-direction: column;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .allmsg {
+        width: 100%;
+    }
+}

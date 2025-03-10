@@ -1,0 +1,51 @@
+.more-text,
+.postBottomDesc {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.postBottomDesc {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    position: relative; 
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.desc {
+    transition: .5s ease;
+    width: 100% !important;                
+    overflow: hidden;             
+    display: -webkit-box;          
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 2;        
+    color:rgb(74, 74, 74);
+    font-size: .9em;
+}
+.desc >.userInDesc{
+    text-transform:lowercase; 
+    margin-right: 5px;
+    color:rgb(43, 43, 43);
+    font-size: 1.15em;
+    font-weight: 500;
+}
+.more-text {
+    cursor: pointer;
+    display: inline-block;         
+    color: rgb(146, 146, 146);              
+    transition: color 0.2s;  
+    font-size: 13px; 
+    margin-right: 5px;
+       
+}
+
+.more-text:hover {
+    color: rgb(0, 0, 0); 
+}
+
+.expanded {
+    max-height: none;               
+    -webkit-line-clamp: unset;    
+}

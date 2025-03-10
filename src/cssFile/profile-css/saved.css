@@ -1,0 +1,186 @@
+.saved,
+.saved>.outopensave,
+.saved>.outopensave>.toph,
+.saved>.outopensave>.opensave,
+.saved>.outopensave>.opensave>.onebox,
+.ones,
+.nosaved {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.saved {
+    position: relative;
+    width: 100%;
+}
+
+.saved>p {
+    margin: 0;
+    font-size: 13px;
+    color: grey;
+}
+
+.saved>.outsaved {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 5px);
+    gap: 20px;
+    padding: 1px;
+
+}
+
+.saved>.outsaved>.saved1 {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: calc(100% - 5px);
+    gap: 1px;
+    padding: 1px;
+    aspect-ratio: 1/1;
+}
+
+.saved>.outsaved>.saved1>p,
+.saved>.outsaved>.saved1>b {
+    margin: 10px;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-shadow: 6px 6px 20px rgb(2, 2, 2);
+}
+
+.saved>.outsaved>.saved1>b {
+    cursor: pointer;
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+    color: rgb(238, 238, 238);
+}
+
+.saved>.outsaved>.saved1>b:hover {
+    color: rgb(127, 221, 255);
+}
+
+.ones {
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.04);
+    aspect-ratio: 1/1;
+}
+
+.ones:hover {
+    cursor: pointer;
+    filter: brightness(.5);
+}
+
+.nosaved>img {
+    margin: 30px 0 10px 0;
+    width: 30%;
+    max-width: 600px;
+}
+
+.nosaved>b {
+    font-size: xx-large;
+    color: rgb(36, 36, 36);
+}
+
+.nosaved>p {
+    text-align: center;
+}
+
+.saved>.outopensave {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    border-top: 5px solid#f1f1f1;
+}
+
+.saved>.outopensave>.toph {
+    width: calc(100% - 20px);
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.saved>.outopensave>.toph >svg{
+    cursor: pointer;
+    fill:rgb(172, 172, 172);
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+.saved>.outopensave>.toph >svg:hover{
+    fill:rgb(255, 0, 0);
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+
+.saved>.outopensave>.toph>p {
+    margin:0;
+    font-size: 18px;
+    color:grey;
+}
+
+.saved>.outopensave>.opensave {
+    height: 100%;
+    width: 60%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-direction: row;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+    gap: 20%;
+    padding: 0 20%;
+}
+
+.saved>.outopensave>.opensave::-webkit-scrollbar {
+    height: 5px;
+    background: #f1f1f1;
+}
+
+.saved>.outopensave>.opensave::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.saved>.outopensave>.opensave>.onebox {
+    height: 80%;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    flex-direction: column;
+    gap:3px;
+}
+
+.saved>.outopensave>.opensave>.onebox>img {
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 100%;
+    max-width: 90vw;
+    object-fit: contain;
+}
+
+.saved>.outopensave>.opensave>.onebox>.timep {
+    color: rgb(160, 160, 160);
+    margin: 0;
+    width:100%;
+    text-align: center;
+    font-size: 10px;
+    width: 100%
+}
+
+@media(max-width:500px) {
+    .saved>.outsaved {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr)
+    }
+}

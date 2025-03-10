@@ -1,0 +1,86 @@
+
+.onename,
+.nocut ,
+.cut,.bothName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.onename > .nocut{
+    width:100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+.onename{
+    width:100%;
+    padding: 3px 10px;
+    flex-direction:row;
+   
+}
+
+.nocut {
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 9px;
+}
+.cut {
+    width:30px;
+}
+.cut >img{
+    filter: brightness(.4);
+    border-radius: 50%;
+   
+}
+.cut >img:hover{
+    filter: brightness(1);
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.337) ;
+}
+img {
+    user-select: none;
+   
+}
+
+.imgh {
+    width: 17px;
+    transition: .25s;
+    transform: rotateZ(0deg);
+
+}
+
+.imgs {
+    width: 35px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.onename:hover .imgs{
+    transition: .5s;
+    transform: rotateY(360deg);
+}
+.bothName{
+   align-items: flex-start;
+   gap:0;
+}
+.bothName>.h {
+    margin: 0 ;
+    color: rgb(213, 213, 213);
+}
+.onename:hover .bothName>.h{
+    color:white;
+}
+.bothName>.s {
+    padding:0;
+    margin: 0;
+    color:white;
+    
+}
+
+.bothName>.name2 {
+    margin: 0;
+    padding: 0 0 4px 0 ;
+    font-size: 12px;
+    color: white;
+    
+}

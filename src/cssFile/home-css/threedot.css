@@ -1,0 +1,145 @@
+.morevvip,
+.morevvip>.bluck,
+.morevvip>.bluck>.maindiv,
+.morevvip>.bluck>.maindiv>h3,
+.morevvip>.bluck>.maindiv>.onepr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.morevvip {
+    aspect-ratio: 1/2;
+    width: 15px;
+}
+
+.morevvip>svg {
+    transition: .1s ease-out;
+    width: 13px;
+    aspect-ratio: 1/2;
+    opacity: .75;
+}
+
+.morevvip:hover>svg {
+    width: 15px;
+    opacity: 1;
+}
+
+.morevvip>.bluck {
+    cursor: pointer;
+    z-index: 50;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.morevvip>.bluck>.maindiv {
+    cursor: default;
+    padding: 20px;
+    width: 350px;
+    max-width: calc(95% - 40px);
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 20px;
+    animation: zoom678 .4s ease-in-out;
+}
+
+@keyframes zoom678 {
+    0% {
+        scale: 0;
+    }
+
+    80% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+.morevvip>.bluck>.maindiv>h3 {
+    width: 100%;
+    flex-direction: row;
+    gap: 5px;
+    color: grey;
+    justify-content: flex-start;
+    margin-top: 10px;
+
+}
+
+.morevvip>.bluck>.maindiv>h3>img {
+    cursor: pointer;
+    width: 25px;
+    aspect-ratio: 1/1;
+    background-color: grey;
+    border-radius: 5px;
+
+}
+
+.morevvip>.bluck>.maindiv>h3>img:hover {
+    opacity: .7;
+}
+
+.morevvip>.bluck>.maindiv>.onepr {
+    transition: .2s ease;
+    width: calc(100% - 20px);
+    flex-direction: row;
+    gap: 5px;
+    justify-content: flex-start;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.morevvip>.bluck>.maindiv>.onepr:hover {
+    background-color: aliceblue;
+}
+
+.morevvip>.bluck>.maindiv>.onepr>img {
+    width: 20px;
+}
+
+.morevvip>.bluck>.maindiv>.onepr>p {
+    color: rgb(58, 58, 58);
+    margin: 0;
+}
+
+.morevvip>.bluck>.maindiv>textarea {
+    color: rgb(80, 80, 80);
+    font-family: inherit;
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    background-color: transparent;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+
+.morevvip>.bluck>.maindiv>textarea::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(255, 255, 255, 0);
+}
+
+.morevvip>.bluck>.maindiv>textarea::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.morevvip>.bluck>.maindiv>.butclck{
+    align-self: flex-end;
+    background-color: rgb(0, 212, 49);
+    padding:2px 10px 4px 10px ;
+    border-radius: 10px;
+    color:rgb(255, 255, 255)
+}

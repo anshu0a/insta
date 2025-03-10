@@ -1,0 +1,107 @@
+.mainmore,
+.mainmore>.toput,
+.mainmore>.middlePart,
+.mainmore>.middlePart>.edtusrinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.mainmore {
+    position: relative;
+    flex-direction: column;
+    width: calc(100% - 209px);
+}
+
+.mainmore>.toput {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    width: calc(100% - 20px);
+    justify-content: flex-start;
+    gap: 3px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.mainmore>.toput>.bbu {
+    display:none;
+    cursor: pointer;
+    width: 20px;
+    fill: rgb(56, 56, 56);
+}
+
+.mainmore>.toput>p {
+    color: rgb(56, 56, 56);
+    font-size: 18px;
+    margin: 0;
+}
+
+.mainmore>.middlePart {
+    margin: 20px 0;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+}
+
+.mainmore>.middlePart>.infom {
+    width: calc(100% - 15px);
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+    padding-left: 15px;
+    color: rgb(167, 167, 167);
+}
+
+
+.mainmore>.middlePart>.edtusrinfo {
+    background-color: rgb(255, 255, 255);
+    top:69px;
+    border-radius: 15px;
+    padding:10px 20px;
+    aspect-ratio: 1/1;
+    align-self: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.mainmore>.middlePart>.edtusrinfo>img {
+    cursor: pointer;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 1px solid rgb(226, 226, 226);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.247);
+    width: 70px;
+}
+.mainmore>.middlePart>.edtusrinfo>.badgx{
+    position: relative;
+    transform: translateY(-50%);
+    color:white;
+    border-radius: 5px;
+    user-select: none;
+    padding:2px 15px 4px 15px;
+}
+
+
+/* ________________________________________tab____________________________________________ */
+@media(max-width:900px) {
+    .mainmore {
+        width: calc(100% - 68px)
+    }
+}
+
+/* ____________________________________phone______________________________________________________ */
+@media(max-width:500px) {
+
+    .mainmore {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .mainmore>.toput>.bbu {
+        display:flex;
+    }
+}

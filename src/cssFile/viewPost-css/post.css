@@ -1,0 +1,139 @@
+.showonexpost,
+.postm,
+.postm>.topty,
+.postm>.topty>.prt1,
+.postm>.topty>.prt1>.aboutusmn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.showonexpost {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: calc(100vw - 249px);
+    height: calc(100vh - 40px);
+    padding: 20px;
+    cursor: pointer;
+    overflow: scroll;
+    background-color: rgba(4, 4, 4, 0.652);
+}
+
+.showonexpost::-webkit-scrollbar {
+    display: none;
+}
+
+.postm {
+    position: relative;
+    cursor: auto;
+    max-width: 95%;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(66, 66, 66);
+    padding: 2.5%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.786);
+    animation: zuumx .5s ease-in-out forwards;
+}
+
+
+
+
+@keyframes zuumx {
+    0% {
+        bottom: -100vh
+    }
+
+    75% {
+        bottom: 20px
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.postm>.topty {
+    width: calc(100% - 10px);
+    padding: 0 5px;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: space-between;
+}
+
+.postm>.topty>.prt1 {
+    width:calc(100%);
+    flex-direction: row;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+.postm>.topty>.prt1>img {
+    width: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.postm>.topty>.prt1>.aboutusmn {
+    align-items: flex-start;
+    width: calc(100% - 35px);
+    line-height: 15px;
+
+}
+
+.postm>.topty>.prt1>.aboutusmn>p {
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+    color: rgb(65, 65, 65);
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.postm>.topty>.prt1>.aboutusmn>.fname {
+    font-size: 12px;
+    color: rgb(152, 152, 152);
+    font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.postm>img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 7px;
+    max-height: 70vh;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0);
+
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.postm>.ccmxmtt {
+    width: 100%;
+    max-width: 700px;
+}
+
+/* ______________________________________________________________________________ */
+@media (max-width:900px) {
+    .showonexpost {
+        width: calc(100% - 109px)
+    }
+}
+
+@media (max-width:500px) {
+    .showonexpost {
+        width: calc(100vw - 40px);
+        height: calc(100vh - 50px)
+    }
+}

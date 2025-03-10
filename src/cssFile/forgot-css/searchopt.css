@@ -1,0 +1,50 @@
+.ooppttyt,
+.ooppttyt>.outlayer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ooppttyt {
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.697);
+}
+
+.ooppttyt>.outlayer {
+    cursor:default;
+    background-color: rgb(255, 255, 255);
+    color: rgb(50, 50, 50);
+    max-width: calc(300px);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    gap: 5px;
+    width:calc(90%  - 40px)
+}
+
+.ooppttyt>.outlayer>p {
+   word-break: break-all;
+    width:70%;
+    color:rgb(163, 163, 163);
+    cursor: pointer;
+    margin: 0;
+    border-radius: 5px;
+    padding: 5px 15%;
+
+
+}
+
+.ooppttyt>.outlayer>p:hover {
+    transition: .2s ease;
+    background-color: rgb(236, 248, 255);
+    color:rgb(66, 66, 66)
+}

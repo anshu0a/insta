@@ -1,0 +1,79 @@
+.postBottomBtn,
+.postBottomBtn>.onesection,
+.postBottomBtn>.twosection,
+.postBottomBtn>.onesection>.btn,
+.postBottomBtn>.twosection>.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postBottomBtn {
+    width: calc(100%);
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+
+}
+
+.postBottomBtn>.onesection,
+.postBottomBtn>.twosection {
+    flex-direction: row;
+    gap: 2px;
+}
+
+.postBottomBtn>.onesection>p {
+    margin: 0;
+    margin-right: 8px;
+}
+
+.postBottomBtn>.onesection>.btn,
+.postBottomBtn>.twosection>.btn {
+    width: 29px;
+    aspect-ratio: 1/1;
+}
+
+.postBottomBtn svg {
+    z-index: 0;
+    opacity: .75;
+    transition: .1s ease-in;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+}
+
+.postBottomBtn>.onesection>.btn:hover svg,
+.postBottomBtn>.twosection>.btn:hover svg {
+    width: 25px;
+    opacity: 1;
+    transform: translate(0, -3px);
+}
+
+.postBottomBtn>.twosection>.save>svg>polygon {
+    fill: rgb(0, 0, 0)
+}
+
+.nn {
+    animation: moveBox 10s ease-in-out infinite;
+}
+
+.nn:hover {
+    animation: none;
+}
+
+@keyframes moveBox {
+    0% {
+        transform: translateY(0);
+    }
+
+    5% {
+        transform: translate(0, -2px);
+    }
+
+    10% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

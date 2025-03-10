@@ -1,0 +1,138 @@
+.one,
+.one>.outimg,
+.one>.outimg>img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.one {
+    cursor: pointer;
+    position: relative;
+    width: calc(100% - 20px);
+    padding: 10px;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 10px;
+    color: rgb(57, 57, 57);
+
+}
+
+.one:hover {
+    transition: .2s ease;
+    color: rgb(0, 0, 0);
+    background-color: rgb(240, 240, 240);
+}
+
+.one>.outimg {
+    position: relative;
+    min-width: 27px;
+    aspect-ratio: 1/1;
+}
+
+.one>.outimg>.redu {
+    position: absolute;
+    right: -20%;
+    top: -20%;
+    color: white;
+    text-align: center;
+    font-size: 9px;
+    width: 13px;
+    aspect-ratio: 1/1;
+    font-weight: 700;
+    border-radius: 50%;
+    background-color: red ;
+    border:3px solid white
+}
+
+.one:hover>.outimg>.redu {
+    transition: .5s ease;
+    scale: 1.2;
+    transform: rotateY(360deg);
+}
+.redukm{
+    position: absolute;
+    right: -10%;
+    top:-10%;
+    background-color: rgb(255, 0, 0);
+    width: 8px;
+    aspect-ratio: 1/1;
+    border:3px solid white;
+    border-radius: 50%;
+}
+
+.one>.outimg>img {
+    user-select: none;
+    width: 23px;
+    aspect-ratio: 1/1;
+    transition: .1s ease-in-out;
+    object-fit: cover;
+    object-position: center;
+}
+
+.one:hover>.outimg>img {
+
+    width: 26px;
+}
+
+.one>.outimg>.imgpic {
+    filter: brightness(.25);
+
+}
+
+.one:hover>.outimg>.imgpic {
+    filter: brightness(0);
+
+}
+
+.one>p {
+    font-size: 17px;
+    margin: 0;
+    width: 130px;
+}
+
+.one>.whichPost {
+    position: absolute;
+    z-index: 100;
+    right: -30px;
+}
+
+.More {
+    margin-top: 25px;
+}
+
+
+@media(max-width:900px) {
+    .one>p {
+        display: none;
+    }
+}
+
+@media(max-width:500px) {
+    .one {
+        gap: 0;
+        padding: 5px;
+        justify-content: center;
+    }
+
+    .one:hover {
+        background-color: rgba(255, 222, 173, 0);
+    }
+
+    .one>.outimg>img {
+        width: 24px;
+    }
+
+    .More {
+        margin: 0;
+    }
+
+    /* .More,
+    .Search,
+    .Explore,
+    .Notifications {
+        display: none
+    } */
+}

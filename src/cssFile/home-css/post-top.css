@@ -1,0 +1,77 @@
+.postTop,
+.postTop>.firstsec,
+.postTop>.secondsec,
+.postTop>.firstsec>.textinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.postTop {
+    overflow: hidden;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 15px 5px;
+    width: calc(100% - 10px);
+}
+
+.postTop>.firstsec {
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    width: calc(100% - 20px)
+}
+
+.postTop>.firstsec>img {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-position: center;
+    object-fit: cover;
+    width: 40px;
+}
+
+.postTop>.firstsec>.textinfo {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    max-width: 60%;
+    gap: 0;
+    line-height: 16px;
+}
+
+.postTop>.firstsec>.textinfo>p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.postTop>.firstsec>.textinfo>.user {
+    color: rgb(54, 54, 54);
+    font-size: 15px;
+    font-weight: 500; 
+}
+
+.postTop>.firstsec>.textinfo>.loc {
+    color: rgb(105, 105, 105);
+    font-size: 12px;
+}
+
+.postTop>.firstsec>.ago {
+    font-size: 11px;
+    color: rgb(168, 168, 168);
+    align-self: flex-end;
+    white-space: nowrap;
+    font-weight: 400;
+    margin: 0%;
+}
+
+.postTop>.secondsec {
+    justify-content: flex-end;
+    padding: 2px;
+    width: 16px;
+    overflow: hidden;
+}

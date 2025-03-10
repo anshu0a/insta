@@ -1,0 +1,50 @@
+.postOne,
+.postOne>.edtmsg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.postOne {
+    position: relative;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.postOne>img {
+    user-select: none;
+    background-color: rgb(231, 231, 231);
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    object-position: center;
+}
+
+.postOne>.edtmsg {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    justify-content: flex-start;
+
+
+}
+.postOne>.edtmsg:hover{
+    transition: .3s ease;
+    opacity:0
+}
+
+.postOne>.edtmsg>p {
+    user-select: none;
+    font-size: 12px;
+    margin: 0;
+    padding: 3px;
+    width: 200%;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    transform: rotateZ(45deg) translateX(-9%) translateY(70%)
+}

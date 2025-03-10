@@ -1,0 +1,77 @@
+.hilight::-webkit-scrollbar{
+    height:1px;
+    background-color: rgb(232, 232, 232);
+}
+
+.hilight::-webkit-scrollbar-thumb{
+    background-color: black;;
+    border-radius:10px ;
+}
+.hilight,.outhigh {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.hilight {
+    gap: 15px;
+    width: calc(100% - 20px);
+    padding:0 10px;
+    overflow-x: scroll;
+}
+
+
+.outhigh{
+    width:100%;
+position: relative;
+}
+
+
+.left,
+.right {
+    display: flex;
+    position: absolute;
+    transition: .2s ease;
+    visibility: hidden;
+}
+.right{
+    transform: rotateY(180deg);
+    right:0;
+}
+.left {
+    left:0;
+}
+
+.left>svg,
+.right>svg {
+    transition: .2s ease;
+    width: 30px;
+    margin: 5px;
+    padding:2.5px ;
+    aspect-ratio: 1/1;
+    border-radius: 20%;
+    fill: rgb(255, 255, 255);
+    background-color: #00000071;
+
+}
+
+.left:hover>svg,
+.right:hover>svg {
+    background-color: #000000ad;
+}
+
+
+
+@media(max-width:700px){
+
+    .hilight {
+        gap:5px;
+    }
+}
+@media(max-width:500px){
+
+   .left,.right{
+    display:none;
+   }
+}

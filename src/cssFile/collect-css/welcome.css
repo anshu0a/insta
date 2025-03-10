@@ -1,0 +1,27 @@
+.welcome {
+    width: calc(100% - 40px);
+    padding: 10px 20px;
+}
+
+.welcome>h1 {
+    user-select: none;
+    font-size: 40px;
+    line-height: 40px;
+    color: rgb(0, 187, 255);
+    margin-top: 12px;
+}
+
+.welcome>h1>span {
+    color: rgb(131, 220, 255);
+
+}
+
+.welcome>p {
+    color: rgb(234, 234, 234)
+}
+
+@media(max-width:850px) {
+    .welcome {
+        display: none
+    }
+}

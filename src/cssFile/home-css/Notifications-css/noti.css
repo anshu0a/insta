@@ -1,0 +1,467 @@
+.noti,
+.noti>.topu,
+.noti>.part,
+.noti>.part>.emptynoti,
+.noti>.part>.onexlist,
+.noti>.part>.onexlist>.le,
+.noti>.part>.onexlist>.ri,
+.noti>.part>.optnx,
+.noti>.part>.optnx>.oopp,
+.noti>.part>.optnx>.oopp>.noxx,
+.noti>.part>.optnx>.oopp>.inm ,
+.showonexpost{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.noti {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 306px;
+    max-width: 100%;
+    color: rgb(46, 46, 46);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 0px 5px rgba(0, 0, 0, 0.091);
+    padding-top: 20px;
+    animation: btm22 .2s ease-out forwards;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.noti>.blm {
+    display: none;
+}
+
+.noti>.topu {
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    width: calc(100% - 30px);
+    margin: 20px 15px 5px 15px;
+    top: 0;
+    padding: 4px 0;
+}
+
+.noti>.topu>.notp {
+    margin: 0;
+    font-size: larger;
+}
+
+.noti>.topu>.unredss {
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    margin: 0;
+    font-size: small;
+    padding: 3px 10px 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(0, 136, 255);
+}
+
+.noti>.topu>.unredss:hover {
+    background-color: rgb(0, 121, 202);
+}
+
+
+.noti>.part {
+    width: calc(100% - 17px);
+    margin: 10px 5px 1px 5px;
+    overflow-y: scroll;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 8px 3.5px;
+    height: calc(100% - 20px);
+}
+
+.noti>.part>.onexlist {
+    align-items: flex-start;
+    border-radius: 5px;
+    width: calc(100% - 10px);
+    padding: 8px 5px;
+    flex-direction: row;
+    gap: 3px;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+.noti>.part>.listseen {
+    background-color: transparent;
+}
+
+.noti>.part>.onexlist:hover {
+    transition: .2s ease;
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+.noti>.part>.onexlist>.le {
+    align-items: flex-start;
+    flex-direction: row;
+    width: calc(100% - 18px);
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+.noti>.part>.onexlist>.le>img {
+    width: 28px;
+    aspect-ratio: 1/1;
+    padding: 2px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.noti>.part>.onexlist:hover>.le>img {
+    transition: .6s ease;
+    transform: rotateY(360deg);
+}
+
+.noti>.part>.onexlist>.le>.msgn {
+    width: calc(100% - 33px);
+    word-wrap: break-word;
+    font-size: small;
+    margin: 6px 0;
+}
+
+.noti>.part>.onexlist>.ri {
+    cursor: pointer;
+    width: 12px;
+    aspect-ratio: 1/2;
+    justify-content: flex-start;
+}
+
+.noti>.part>.onexlist>.ri>svg {
+    width: 10px;
+    margin: 5px 0;
+    height: 100%;
+}
+
+.noti>.part>.onexlist>.ri>svg>line {
+    stroke: rgb(0, 0, 0)
+}
+
+
+.noti>.part>.onexlist>.ri:hover>svg {
+    transition: .1s ease-in-out;
+    width: 12px;
+}
+
+.noti>.part::-webkit-scrollbar {
+    background: rgba(255, 255, 255, 0);
+    width: 5px;
+}
+
+.noti>.part::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+}
+
+.noti:hover>.part::-webkit-scrollbar-thumb {
+    background: rgb(60, 60, 60);
+}
+
+/* ______________________________________________________________________________________________________________________________ */
+@keyframes btm22 {
+    0% {
+        left: -300px;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+
+    100% {
+        left: 208px;
+        opacity: 1;
+    }
+}
+
+@keyframes btm33 {
+    0% {
+        left: -300px;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+
+    100% {
+        left: 68px;
+        opacity: 1;
+    }
+}
+
+@keyframes btmm {
+    0% {
+        top: calc(1000px);
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        top: calc(20vh);
+        opacity: 1;
+    }
+}
+
+.noti>.part>.emptynoti{
+    width:80%;
+    margin-top: 10vh;
+    font-size: 20px;
+    color:rgb(103, 103, 103);
+    
+    text-shadow: 1px 1px 5px rgb(181, 181, 181);
+}
+
+
+/* __________________________________________________________________options________________________________________ */
+
+.noti>.part>.optnx {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(86, 86, 86);
+    border-radius: 10px;
+    top: 50%;
+    padding: 10px 20px;
+    transform: translateY(-50%);
+    width: calc(100% - 75px);
+    animation: zolomcf .4s ease-out forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes zolomcf {
+    0% {
+        scale: 0;
+    }
+
+    70% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+.noti>.part>.optnx>.cutmtyf {
+    cursor: pointer;
+    width: 20px;
+    fill: red;
+    border-radius: 50%;
+    position: absolute;
+    aspect-ratio: 1/1;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.noti>.part>.optnx>img {
+    position: relative;
+    top: 5px;
+    width: 38px;
+    aspect-ratio: 1/1;
+    box-shadow: 0px 0px 10px rgb(69, 69, 69);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.noti>.part>.optnx>.poi {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.345);
+    padding: 8px 10px;
+    border-radius: 10px;
+    max-width: calc(100% - 20px);
+    margin: 0%;
+}
+
+.noti>.part>.optnx>.oopp {
+    color: rgb(66, 66, 66);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px 0;
+    gap: 1px;
+    width: calc(100% - 10px);
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.noti>.part>.optnx>.oopp>.noxx {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0;
+    width: calc(100% - 20px);
+    border-radius: 5px;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.noti>.part>.optnx>.oopp>.noxx>.imxy {
+    width: 18px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.noti>.part>.optnx>.oopp>.noxx>p {
+    cursor: pointer;
+    margin: 0;
+    font-size: 15px;
+    width: calc(100%);
+}
+
+.noti>.part>.optnx>.oopp>.noxx>.ddul {
+    color: red;
+}
+
+.noti>.part>.optnx>.oopp>.noxx:hover {
+    transition: .2s ease;
+    background-color: rgb(220, 220, 220);
+}
+
+.noti>.part>.optnx>.oopp>.inm {
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    gap: 2px;
+    overflow: hidden;
+    animation: xert .3s ease-in forwards;
+}
+
+@keyframes xert {
+    0% {
+        height: 0;
+
+    }
+
+    30% {
+        height: 0;
+
+    }
+
+    100% {
+        height: 35.5px;
+    }
+}
+
+.noti>.part>.optnx>.oopp>.inm>input {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 8px 5px;
+    margin: 0 5px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(66, 66, 66);
+    border-bottom: 1px solid rgb(0, 187, 255);
+
+
+}
+
+
+.noti>.part>.optnx>.oopp>.inm>p {
+    cursor: pointer;
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin: 0;
+    font-size: 600;
+    color: rgb(0, 187, 255);
+}
+
+
+
+/* _________________________________________________mobile__________________________________ */
+@media(max-width:900px) {
+    .noti {
+        animation: btm33 .2s ease-out forwards;
+
+    }
+}
+
+@media(max-width:500px) {
+    .noti {
+        width: 100%;
+        bottom: 53px;
+        border-radius: 20px 20px 0 0;
+        color: white;
+        background-color: rgb(35, 35, 35);
+        animation: btmm .2s ease-out forwards;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.091);
+        left: 0;
+        right: 0;
+    }
+
+    .noti>.part>.optnx>.cutmtyf {
+        fill: rgb(255, 255, 255);
+    }
+
+    .noti>.blm {
+        display: block;
+        width: 10%;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .noti>.part>.onexlist {
+        background-color: rgba(149, 202, 238, 0.069);
+    }
+    .noti>.part>.emptynoti{
+        text-shadow: 1px 1px 5px rgb(36, 36, 36);
+    }
+
+    .noti>.part>.listseen {
+        background-color: transparent;
+    }
+
+    .noti>.part>.onexlist:hover {
+        background-color: rgba(253, 253, 253, 0.047);
+    }
+
+    .noti:hover>.part::-webkit-scrollbar-thumb {
+        background: rgb(255, 255, 255);
+    }
+
+    .noti>.part>.onexlist>.ri>svg>line {
+        stroke: rgb(233, 233, 233)
+    }
+
+
+    .noti>.part>.optnx {
+        background-color: rgb(27, 27, 27);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.984);
+    }
+
+    .noti>.part>.optnx>.poi {
+        background-color: rgba(255, 255, 255, 0.074);
+    }
+
+    .noti>.part>.optnx>.oopp>.noxx>.imxy {
+        width: 22px;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+        filter: brightness(40);
+    }
+
+    .noti>.part>.optnx>.oopp>.noxx>p {
+        color: rgb(219, 219, 219);
+    }
+
+    .noti>.part>.optnx>.oopp>.noxx:hover {
+        background-color: rgb(64, 64, 64);
+    }
+
+    .noti>.part>.optnx>.oopp>.inm>input {
+        color: rgb(228, 228, 228);
+    }
+}

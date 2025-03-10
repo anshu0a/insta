@@ -1,0 +1,211 @@
+.mainmore>.middlePart>.option1,
+.mainmore>.middlePart>.option1>.toput,
+.mainmore>.middlePart>.option2>.toput,
+.mainmore>.middlePart>.option1>.mainprt,
+.mainmore>.middlePart>.option1>.mainprt>.chngusername,
+.mainmore>.middlePart>.option1>.mainprt>.passwrd {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainmore>.middlePart>.option1 {
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 207px);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    justify-content: flex-start;
+    animation: zuum .5s ease-in-out forwards;
+    overflow: hidden;
+}
+
+@keyframes zuum {
+    0% {
+        scale: 0;
+        border-radius: 50%;
+    }
+
+    75% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+        border-radius: 0%;
+    }
+}
+
+.mainmore>.middlePart>.option1>.toput,
+.mainmore>.middlePart>.option2>.toput  {
+    flex-direction: row;
+    width: calc(100% - 20px);
+    padding: 15px 10px;
+    justify-content: flex-start;
+    gap: 2px;
+    background-color: rgb(245, 245, 245);
+
+}
+
+.mainmore>.middlePart>.option1>.toput>.bbu ,
+.mainmore>.middlePart>.option2>.toput>.bbu{
+    cursor: pointer;
+    fill: rgb(68, 68, 68);
+    width: 20px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+
+.mainmore>.middlePart>.option1>.toput>p,
+.mainmore>.middlePart>.option2>.toput>p {
+    margin: 0;
+    font-size: 17px;
+    color: rgb(68, 68, 68);
+}
+
+.mainmore>.middlePart>.option1>.mainprt {
+    width: calc(100% - 5px);
+    padding-left: 5px;
+    max-width: 695px;
+    height: calc(100% - 0px);
+    overflow-y: scroll;
+    justify-content: flex-start;
+
+}
+
+.mainmore>.middlePart>.option1>.mainprt>.inform {
+    width: calc(100% - 30px);
+    color: rgb(145, 145, 145);
+    font-size: 14px;
+    margin: 40px 15px 0 15px;
+    text-align: center;
+}
+.mainmore>.middlePart>.option1>.mainprt>.informm{
+    width:calc(95% - 40px);
+    padding:10px 20px;
+    border:1px solid rgb(236, 236, 236);
+    border-radius: 10px;
+    color:rgb(207, 207, 207);
+}
+
+.mainmore>.middlePart>.option1>.mainprt>.inform>span {
+    font-weight: 500;
+}
+
+.mainmore>.middlePart>.option1>.mainprt::-webkit-scrollbar {
+    background-color: rgba(255, 255, 255, 0);
+    width: 5px
+}
+
+.mainmore>.middlePart>.option1>.mainprt::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.mainmore>.middlePart>.option1>.mainprt>.chngusername {
+    align-items: flex-start;
+    width: calc(100% - 62px);
+    padding: 30px 20px;
+    margin: 40px 10px 10px 10px;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 20px;
+    gap: 5px;
+}
+.mainmore>.middlePart>.option1>.mainprt>.chngusername>.gap{
+    margin-top: 20px;
+}
+.mainmore>.middlePart>.option1>.mainprt>.chngusername>label {
+    color: rgb(161, 161, 161);
+    font-size: 18px;
+}
+
+.mainmore>.middlePart>.option1>.mainprt>.chngusername>.inp1,
+.mainmore>.middlePart>.option1>.mainprt>.passwrd>.inp1 {
+    width: calc(100% - 10px);
+    padding: 10px 5px;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    color: rgb(63, 63, 63);
+    outline: none;
+    background-color: transparent;
+}
+
+.mainmore>.middlePart>.option1>.mainprt>.chngusername>.alerthai,
+.mainmore>.middlePart>.option1>.mainprt>.passwrd>.alerthai {
+    margin: 0;
+    font-size: 12px;
+    align-self: flex-start;
+}
+
+.mainmore>.middlePart>.option1>.mainprt>.clckbtn,
+.mainmore>.middlePart>.option1>.mainprt>.passwrd>.clckbtn {
+    cursor: pointer;
+    background-color: rgb(30, 228, 0);
+    align-self: flex-end;
+    margin: 0 15px 10px 15px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: white;
+}
+.mainmore>.middlePart>.option1>.mainprt>.forgit,
+.mainmore>.middlePart>.option1>.mainprt>.passwrd>.forgit{
+    width:95%;
+    color: rgb(0, 148, 211);
+}
+.mainmore>.middlePart>.option1>.mainprt>.passwrd {
+    gap: 20px;
+    width: calc(100% - 30px);
+    margin: 40px 15px 0 15px;
+
+}
+.mainmore>.middlePart>.option1>.mainprt>.passwrd>.myser{
+    width:100%;
+    font-size: 16px;
+    color:rgb(65, 65, 65)
+}
+.mainmore>.middlePart>.option1>.mainprt>.passwrd>p {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(119, 119, 119)
+}
+.mainmore>.middlePart>.option1>.mainprt>.passwrd>.otprel{
+    width:100%;
+    color:rgb(162, 162, 162)
+}
+.mainmore>.middlePart>.option1>.mainprt>.passwrd>.otprel>b{
+    color:rgb(93, 93, 93)
+}
+
+.mainmore>.middlePart>.option1>.mainprt>.passwrd>.otprel>.nowar{
+    cursor: pointer;
+    color:rgb(250, 250, 250);
+    background-color: rgba(112, 64, 0, 0.748);
+    padding:5px 10px 6px 10px;
+    margin:0 5px;
+    border-radius: 10px;
+}
+.mainmore>.middlePart>.option1>.mainprt>.passwrd>.otprel>.nowar:hover{
+    opacity: .9;
+}
+
+.mainmore>.middlePart>.option1>.mainprt>.passwrd>.otprel>.war{
+    color:rgb(255, 0, 0);
+}
+/* ____________________________________________________________________________________________________________ */
+@media (max-width:900px) {
+    .mainmore>.middlePart>.option1 {
+        width: calc(100% - 68px);
+    }
+}
+
+@media (max-width:500px) {
+    .mainmore>.middlePart>.option1 {
+        height: calc(100vh - 53px);
+        width: 100%;
+    }
+}

@@ -1,0 +1,108 @@
+.crtx,
+.crtx > .whicOp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.crtx {
+    position: relative;
+    width:150px;
+    gap: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.248);
+    position: fixed;
+    left:calc(50% + 106px);
+    top:50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    animation: btm2 .25s ease-out  forwards;
+    z-index: 2;
+   
+
+}
+@keyframes btm2 {
+    0%{
+       left:-100px;
+        opacity: 0;
+    }
+    75%{
+        left:calc(50% + 126px);
+        opacity: .9;
+    }
+    100%{
+        left:calc(50% + 106px);
+        opacity: 1;
+    }
+}
+
+@keyframes btm3 {
+    0%{
+       left:-100px;
+        opacity: 0;
+    }
+    75%{
+        left:calc(50% + 57px);
+        opacity: .9;
+    }
+    100%{
+        left:calc(50% + 37px);
+        opacity: 1;
+    }
+}
+
+@keyframes btm {
+    0%{
+        bottom:-100px;
+        opacity: 0;
+    }
+    75%{
+        bottom:20px;
+        opacity: .9;
+    }
+    100%{
+        bottom:0;
+        opacity: 1;
+    }
+}
+.crtx > .whicOp {
+    cursor: pointer;
+    text-align: center;
+    flex-direction:row;
+    justify-content: flex-start;
+    gap:8px;
+    border-radius: 10px;
+    width: calc(100% - 20px);
+    padding:8px 16px; 
+}
+.crtx > .whicOp:hover{
+    transition: .15s ease;
+    background-color: rgb(242, 242, 242);
+}
+.crtx > .whicOp >p{
+    margin:0;
+    color:rgb(0, 0, 0)
+
+}
+.crtx > .whicOp>img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+@media(max-width:900px){
+    .crtx {
+        left:calc(50% + 37px);
+        animation: btm3 .25s ease-out  forwards;
+    
+    }
+}
+@media(max-width:500px){
+    .crtx {
+        top:auto;
+        animation: btm .25s ease-out  forwards;
+        left:calc(50%);
+    
+    }
+}

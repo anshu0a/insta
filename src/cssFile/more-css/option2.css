@@ -1,0 +1,305 @@
+.mainmore>.middlePart>.option2,
+.mainmore>.middlePart>.option2>.mainprt,
+.mainmore>.middlePart>.option2>.mainprt>.moresave87>.onebox,
+.mainmore>.middlePart>.option2>.mainprt>.nosaver,
+.mainmore>.middlePart>.option2>.mainprt>.linkbox,
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>.relbox,
+.mainmore>.middlePart>.option2>.mainprt>.alllinks,
+.mainmore>.middlePart>.option2>.mainprt>.showalllinks,
+.mainmore>.middlePart>.option2>.mainprt>.alllinks>.onelink,
+.mainmore>.middlePart>.option2>.mainprt>.alllinks>.onelink>.prt2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainmore>.middlePart>.option2 {
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 207px);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    justify-content: flex-start;
+    animation: zuum .5s ease-in-out forwards;
+    overflow: hidden;
+}
+
+@keyframes zuum {
+    0% {
+        scale: 0;
+        border-radius: 50%;
+    }
+
+    75% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+        border-radius: 0%;
+    }
+}
+
+.mainmore>.middlePart>.option2>.mainprt {
+    width: calc(100% - 5px);
+    padding: 30px 0 0 5px;
+    max-width: 695px;
+    height: calc(100% - 30px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    justify-content: flex-start;
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt::-webkit-scrollbar {
+    background-color: rgba(255, 255, 255, 0);
+    width: 5px
+}
+
+.mainmore>.middlePart>.option2>.mainprt::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.mainmore>.middlePart>.option2>.mainprt:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.notic {
+    width: 95%;
+    color: rgb(157, 157, 157);
+    text-align: center;
+    font-size: small;
+    margin: 0;
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.moresave87 {
+    padding: 30px 5px;
+    width: calc(100% - 10px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 4fr));
+    grid-auto-rows: 140px;
+    gap: 5px;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.nosaver {
+    width: 100%;
+    padding: 40px 0;
+    gap: 20px;
+    color: rgb(67, 67, 67);
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.nosaver>img {
+    width: 40%;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.moresave87>.onebox {
+    position: relative;
+    background-color: #2a2a2a;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.moresave87>.onebox>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.moresave87>.onebox>.mydat {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 10px;
+    text-shadow: 0px 0px 5px black;
+    color: white;
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.linkbox {
+    max-width: 500px;
+    width: calc(100% - 52px);
+    padding: 15px 15px 30px 15px;
+    margin: 20px 10px;
+    gap: 10px;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 15px;
+    align-items: flex-start;
+    color: grey;
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>input,
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>select {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 5px 10px;
+    color: rgba(0, 0, 0, 0.647);
+    width: calc(100% - 20px);
+    border: none;
+    border-bottom: 1px solid rgb(203, 203, 203);
+    outline: none;
+    background-color: transparent;
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>.myerror {
+    width: 100%;
+    font-size: 12px;
+    margin: 0;
+    color: red;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>.relbox {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>.relbox>p{
+    transition: .2s ease;
+    cursor:pointer;
+    margin:0;
+    padding:5px 10px;
+    color:rgb(152, 152, 152);
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 10px;
+}
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>.relbox>p:hover{
+    color:rgb(60, 60, 60);
+    border: 1px solid rgb(36, 36, 36);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.savebtnu {
+    cursor: pointer;
+    user-select: none;
+    background-color: rgb(28, 145, 255);
+    color: white;
+    padding: 5px 15px;
+    margin: 0 10px 10px 0;
+    align-self: flex-end;
+    border-radius: 10px;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.myerror {
+    width: calc(100% - 15px);
+    font-size: 13px;
+    margin: 30px 0 0 15px;
+    color: rgb(94, 0, 111);
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.addlinks {
+    position: sticky;
+    bottom: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(56, 86, 101);
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.addlinks:hover {
+    transition: .3s ease;
+    opacity: .8;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.showalllinks {
+    flex-direction: row;
+    width: calc(100% - 20px);
+    padding: 20px 10px 10px 10px;
+    justify-content: space-between;
+    color: rgb(94, 94, 94);
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.onelink {
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 170, 255);
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+
+
+.mainmore>.middlePart>.option2>.mainprt>.alllinks {
+    width: calc(100% - 40px);
+
+    padding: 10px;
+    margin: 10px;
+    gap: 5px;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.alllinks>.onelink {
+    width: 100%;
+    flex-direction: row;
+    gap: 5px;
+
+    justify-content: space-between;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.alllinks>.onelink>.prt1 {
+    width: calc(100% - 49px);
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.alllinks>.onelink>.prt1>.first {
+    margin: 0;
+    width: calc(100%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(0, 125, 215);
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.alllinks>.onelink>.prt1>.second {
+    font-size: 13px;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: calc(100% - 10px);
+    margin: 0 5px;
+    color: rgb(140, 140, 140);
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.alllinks>.onelink>.prt1>p+p::-webkit-scrollbar {
+    display: none
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.alllinks>.onelink>.prt2 {
+    flex-direction: row;
+    padding: 2px;
+    gap: 5px;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.alllinks>.onelink>.prt2>img {
+    cursor: pointer;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.alllinks>.onelink>.prt2>img:hover {
+    transition: .3s ease;
+    opacity: .5;
+}
+
+@media (max-width:900px) {
+    .mainmore>.middlePart>.option2 {
+        width: calc(100% - 68px);
+    }
+}
+
+@media (max-width:500px) {
+    .mainmore>.middlePart>.option2 {
+        height: calc(100vh - 53px);
+        width: 100%;
+    }
+}

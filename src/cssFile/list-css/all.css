@@ -1,0 +1,85 @@
+
+.optns>div {
+    user-select: none;
+    width: calc(100% - 40px);
+    padding:20px 20px 200px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(45, 45, 45, 0.515);
+    background-color: rgb(25, 25, 25);
+    height:110px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.optns>div::-webkit-scrollbar,.dt::-webkit-scrollbar {
+    width: 3.5px;
+    height:3.5px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+.optns>div:hover::-webkit-scrollbar-thumb,.dt:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.nsl {
+    z-index: 0;
+    padding: 4px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.309);
+    color: rgb(156, 156, 156);
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(149, 149, 149, 0.277);
+}
+.nsl:hover{
+    border: 1px solid rgb(83, 83, 83);
+
+}
+
+.slct {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0)
+}
+
+.msgspan {
+    margin:0;
+    color: rgb(118, 118, 118);
+    width: 100%;
+    text-align: start;
+}
+
+.Badge,
+.Name,
+.Username,
+.Gender,
+.Active,
+.Relationship {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.dt{
+    box-shadow: inset 12px 0px 10px rgba(0, 0, 0, 0.4), inset -12px 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin:5px 0 ;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding:13.5px 50% 10px 50%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap:10px;
+    scroll-snap-type: x mandatory;
+}
+
+.dt>div{
+    scroll-snap-align: center;
+}

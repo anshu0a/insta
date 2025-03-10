@@ -1,0 +1,224 @@
+.main65,
+.main65>.controls,
+.main65>.controls>.videoout,
+.main65>.finalbox,
+.main65>.controls6>.part,
+.main65>.controls>b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main65 {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+
+.main65>.iin5 {
+    position: absolute;
+    font-family: inherit;
+    bottom: 90px;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(6, 6, 6, 0.574);
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: inherit;
+    width: calc(100% - 20px)
+}
+
+
+.main65>.errmsg {
+    text-align: center;
+    color: red;
+    width: calc(100% - 20px)
+}
+
+.main65>.capvideo {
+    transition: .3s ease;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100vw;
+    height: calc(100vh - 120px);
+    margin: 50px 0 70px 0;
+    transform: rotateY(180deg);
+}
+
+.main65>img,
+.main65>.prevideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    height: calc(100vh - 120px);
+    margin: 50px 0 70px 0;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.main65>.controls {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    padding: 15px 0;
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.main65>.controls0 {
+    justify-content: flex-start;
+    padding: 10px 15px;
+    width: calc(100% - 30px)
+}
+
+.main65>.controls>.timer {
+    font-family: inherit;
+    position: absolute;
+    top: -45px;
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.829);
+}
+
+.main65>.controls>.whatresize {
+    border: 3px solid rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.main65>.controls>img,
+.main65>.controls>label>img {
+    cursor: pointer;
+    width: 30px;
+    background-color: transparent;
+}
+
+.main65>.controls>.videoout {
+    cursor: pointer;
+    width: 40px;
+    aspect-ratio: 1/1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.main65>.controls>.videoout>.videoin {
+    width: 15px;
+    aspect-ratio: 1/1;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+
+}
+
+.main65>.controls>.videoout>.vdeoanmi {
+    animation: recor4 1s infinite .4s ease-in-out forwards;
+}
+
+@keyframes recor4 {
+
+    0%,
+    100% {
+        scale: 1;
+    }
+
+    20% {
+        scale: 0.5;
+    }
+
+    40% {
+        scale: 1.2;
+    }
+
+    60% {
+        scale: 1;
+    }
+
+    80% {
+        scale: 1.2;
+    }
+
+}
+
+.main65>.controls6 {
+    justify-content: space-between;
+    padding: 10px 15px;
+    width: calc(100% - 30px);
+    color: rgb(53, 53, 53);
+    background-color: rgb(255, 255, 255);
+}
+
+.main65>.controls6>.part {
+    flex-direction: row;
+    gap:5px;
+}
+
+.main65>.controls6>.part>img {
+    filter: brightness(.3);
+    width: 30px;
+    cursor: pointer;
+}
+
+.main65>.controls>p,
+.main65>.controls6>.part>p {
+    margin: 0;
+    text-wrap: nowrap;
+
+}
+
+.main65>.controls>.part>.clb {
+    flex-direction: row;
+    user-select: none;
+    font-size: 14px;
+    gap: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid rgb(123, 246, 255);
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+.main65>.controls>b>img {
+    width: 15px;
+    transform: rotateZ(90deg);
+}
+
+.main65>.finalbox {
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 7.1px);
+    flex-direction: row;
+    gap: 20px;
+    padding: 6.55px;
+}
+
+
+.main65>.finalbox>.btnbox1,
+.main65>.controls>.part>img {
+    width: 25px;
+    user-select: none;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+

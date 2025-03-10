@@ -1,0 +1,132 @@
+body::-webkit-scrollbar{
+    width:7px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(248, 253, 255),rgb(156, 156, 156),rgb(0, 0, 0));
+    border-radius:10px ;
+}
+
+.edtPro,
+.edt1,
+.edt2,
+.edt2>div,
+.edt2>label,
+.vviyrfhg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.edtPro {
+    width: 100%;
+    position: relative;
+    gap: 10px;
+    margin-bottom:30px ;
+
+}
+.edt1 {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    width: calc(100% - 40px);
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.932);
+}
+
+.edt1 p {
+    margin: 0;
+    font-size: x-large;
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+}
+
+.edt1>.back {
+    cursor: pointer;
+    margin: 0 10px;
+    width: 30px;
+    padding: 2.5px;
+    background-color: rgba(255, 255, 255, 0.108);
+    border-radius: 30%;
+    filter: brightness(.5);
+    display: flex;
+}
+
+.edt1>.back:hover {
+    filter: brightness(.1);
+
+}
+
+.edt2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    border-radius: 20px;
+    width: calc(100% - 80px);
+    max-width: 550px;
+    padding: 20px 10px;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.edt2>div {
+    width: 30%;
+    border-radius: 50%;
+    border: 1px solid rgb(200, 200, 200);
+    aspect-ratio: 1/1;
+    max-width: 120px;
+}
+
+.edt2>div>img {
+    width: calc(100% - 4px);
+    aspect-ratio: 1/1;
+    padding: 2px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.edt2>label {
+    cursor: pointer;
+    background-color: rgb(242, 242, 242);
+    color: rgb(48, 48, 48);
+    padding: 8px 10px;
+    border-radius: 8px;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.edt2>label:hover {
+    background-color: rgb(242, 249, 255);
+    color: rgb(0, 145, 255);
+}
+
+.edt2>label>img {
+    width: 20px;
+}
+
+.edt2>label>p {
+    margin: 0;
+
+}
+
+/* @media(max-width:500px){
+    body::-webkit-scrollbar{
+       display:none;
+    }
+
+} */
+
+.vviyrfhg{
+    width:100%;
+    flex-direction: column;
+}
+.vviyrfhg>.ih{
+    width:100%;
+    max-width: 500px;
+}

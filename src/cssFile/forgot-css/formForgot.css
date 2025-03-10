@@ -1,0 +1,52 @@
+.inlogin>.outwhat {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: row;
+    gap: 5px;
+
+}
+
+.inlogin>.outwhat>img {
+    cursor: pointer;
+    width: 40px;
+    border-radius: 10px;
+}
+.inlogin>.outwhat>img:hover {
+    background-color: rgba(0, 0, 0, 0.456);
+}
+
+.inlogin>.another,
+.inlogin>.what,
+.inlogin>.my5expire {
+    align-self: flex-start;
+}
+
+.inlogin>.what {
+    margin:0;
+    color: rgb(187, 187, 187);
+}
+
+.inlogin>.another:hover {
+    cursor: pointer;
+    color: rgb(0, 199, 106)
+}
+.inlogin>.someinfo{
+    margin:0;
+    align-self: flex-start;
+}
+.inlogin>.my5resend{
+    align-self: flex-start;
+
+}
+.inlogin>.my5resend>span{
+    cursor: pointer;
+    background-color: green;
+    padding:5px 10px 8px 10px;
+    border-radius: 10px;
+    margin:0 10px;
+}
+.inlogin>.my5resend>span:hover{
+    opacity: .9;
+}

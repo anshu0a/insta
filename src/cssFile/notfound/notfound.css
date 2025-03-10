@@ -1,0 +1,34 @@
+.notfoundz,
+.notfoundz>.bbooxy{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.notfoundz>h1{
+    color:red;
+}
+
+.notfoundz>p{
+    margin: 0;
+    color:rgb(180, 180, 180);
+}
+.notfoundz>.bbooxy {
+    margin:20px 0;
+    flex-direction: row;
+    gap:20px;
+}
+.notfoundz>.bbooxy>.inbox{
+    cursor: pointer;
+    padding:5px 20px;
+    border-radius: 10px;
+}
+.notfoundz>.bbooxy>.a{
+    border:1px solid rgb(0, 227, 72);
+    color:rgb(0, 227, 72);
+}
+.notfoundz>.bbooxy>.b{
+    border:1px solid rgb(0, 145, 255);
+    color:rgb(0, 145, 255);
+}

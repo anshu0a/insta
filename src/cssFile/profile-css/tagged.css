@@ -1,0 +1,75 @@
+.outtagged,
+.outtag,
+.outt,
+.notagged {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+.outtagged{
+    width:100%;
+}
+.tagged {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: calc(100% - 5px);
+    gap: 2px;
+    padding: 1px;
+    position: relative;
+}
+
+.outtag {
+    cursor: pointer;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+
+}
+
+.outtag>img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.outtag:hover>img {
+    transition: .2s;
+    filter: brightness(.5);
+}
+
+.outt {
+    bottom:0;
+    left:0;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    gap:0px;
+}
+
+.outt>img {
+    margin:10px;
+    padding:1px;
+    border-radius: 50%;
+    width:25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.833);
+}
+.notagged{
+    text-align: center;
+    margin:20px 0 ;
+    width:100%;
+}
+.notagged>img{
+    width:30%;
+    max-width: 200px;
+
+}
+.notagged>.sha{
+    
+    margin:0;
+    font-size: xx-large;
+    font-weight: bolder;
+}

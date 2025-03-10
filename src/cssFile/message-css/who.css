@@ -1,0 +1,133 @@
+.allmsg>.who8,
+.allmsg>.who8>.div0,
+.allmsg>.who8>.div1,
+.allmsg>.who8>.div1>.bold,
+.allmsg>.who8>.div1>.bold>.imgdiv,
+.allmsg>.who8>.div2,
+.allmsg>.who8>.div2>.loaderr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.allmsg>.who8 {
+    position: sticky;
+    top:0px;
+    width: 310px;
+}
+
+.allmsg>.who8>.div1 {
+    background-color:aliceblue;
+    height:38px;
+    user-select: none;
+    width: 100%;
+    padding: 11.5px 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.allmsg>.who8>.div1>.bold {
+ 
+    flex-direction: row;
+    padding: 3px 6px;
+    gap: 5px;
+}
+
+.allmsg>.who8>.div1>.bold>p {
+    margin: 0;
+    font-weight: 600;
+    font-size: large;
+    color: rgb(85, 85, 85);
+}
+
+.allmsg>.who8>.div1>.bold>.imgdiv {
+    cursor: pointer;
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+
+.allmsg>.who8>.div1>.bold>.imgdiv>img {
+    user-select: none;
+    width: 18px;
+    opacity: .6;
+}
+.allmsg>.who8>.div1>.bold>.bbu,.ttop>.block1>.bbu{
+    cursor: pointer;
+    width:20px;
+    aspect-ratio: 1/1;
+    fill:rgb(95, 95, 95)
+
+}
+.allmsg>.who8>.div1>.bold>.bbu:hover,.ttop>.block1>.bbu:hover{
+    fill:rgb(0, 157, 255)
+
+}
+.allmsg>.who8>.div1>.bold>.imgdiv:hover>img {
+    user-select: none;
+    width: 20px;
+    opacity: 1;
+}
+
+.allmsg>.who8>.div1>.req {
+    cursor: pointer;
+    margin: 0;
+    color: rgb(0, 149, 255);
+    padding: 3px 6px;
+}
+
+.allmsg>.who8>.div1>.req:hover {
+    color: rgb(0, 105, 180);
+}
+
+.allmsg>.who8>.div2 {
+    width: 100%;
+    padding:10px 0;
+    gap:2px;
+    flex-direction: column;
+    justify-content: flex-start;
+    height:calc(100vh - 86px);
+    overflow: scroll;
+    overflow-x: hidden;
+    border-right: 1px solid rgb(207, 207, 207);
+}
+.allmsg>.who8>.div2>.nomsgg{
+    color:grey;
+    margin: 0;
+    width:90%;
+    text-align: center;
+}
+.allmsg>.who8>.div2>.loaderr{
+    padding :10px;
+    width:calc(100% - 20px)
+}
+.allmsg>.who8>.div2>.snmsgg{
+    margin: 0;
+    color:rgb(255, 255, 255);
+    border-radius:10px ;
+    padding:2px 10px 5px 10px;
+    background-color: rgb(0, 179, 255);
+    max-width:calc(90% - 20px);
+    text-align: center;
+}
+.allmsg>.who8>.div2>.snmsgg:hover{
+    background-color: rgb(0, 152, 217);
+}
+.allmsg>.who8>.div2::-webkit-scrollbar{
+    width:5px;
+}
+.allmsg>.who8:hover>.div2::-webkit-scrollbar-thumb{
+    background: rgb(67, 67, 67);
+    border-radius: 5px;
+}
+
+/* ________________________________________tab____________________________________________ */
+@media(max-width:900px) {
+    .allmsg>.who8 {
+        width: 100px
+    }
+
+    .allmsg>.who8>.div1>.req {
+        display: none
+    }
+}

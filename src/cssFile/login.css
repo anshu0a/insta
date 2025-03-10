@@ -1,0 +1,78 @@
+.outloginm,
+.login,
+.inlogin,
+body,
+.outbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.outloginm {
+    position: relative;
+    background-image: url("/img/login3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.login {
+    align-items: flex-start;
+    margin: 30px 0;
+    padding: 0 10px;
+    margin: 0;
+    width: calc(90% - 20px);
+}
+
+.login>div {
+    justify-content: flex-start;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+
+.inlogin {
+    overflow: hidden;
+    color: white;
+    width: calc(100% - 20px);
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.logininsta path {
+    fill: rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 5px rgb(6, 6, 6));
+}
+
+.outbox {
+    padding: 20px 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+
+.forgot {
+    color: red
+}
+
+.forgot:hover {
+    color: rgb(255, 224, 224)
+}
+
+.newuser {
+    color: rgb(0, 140, 255);
+    border-radius: 5px;
+}
+
+.newuser:hover {
+    color: rgb(216, 238, 255);
+}

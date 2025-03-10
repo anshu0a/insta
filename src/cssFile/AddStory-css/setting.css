@@ -1,0 +1,100 @@
+.main65>.setting,
+.main65>.setting>.body1,
+.main65>.setting>.body1>h3,
+.main65>.setting>.body1>h3>.btn11,
+.main65>.setting>.body1>h3>.pr1tx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main65>.setting {
+    cursor: default;
+    color: rgb(57, 57, 57);
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.898);
+    height: 100vh;
+    width: 100vw;
+}
+
+.main65>.setting>.body1 {
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 50px);
+    overflow: hidden;
+    max-width: 500px;
+    max-height: calc(80vh - 20px);
+    padding: 10px 20px;
+    gap: 1px;
+    border-radius: 15px;
+    justify-content: flex-start;
+}
+
+.main65>.setting>.body1>h3 {
+    flex-direction: row;
+    gap: 2px;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    justify-content: space-between;
+}
+
+.main65>.setting>.body1>.notir,
+.main65>.setting>.body1>.outpers>.notir {
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    color:rgb(168, 168, 168);
+}
+
+.main65>.setting>.body1>h3>.pr1tx {
+    flex-direction: row;
+    gap:10px;
+    cursor: pointer;
+}
+
+.main65>.setting>.body1>h3>.pr1tx>img {
+    
+    width: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    transform: rotateZ(180deg);
+    filter: brightness(.7);
+
+}
+
+.main65>.setting>.body1>h3>.pr1tx>img:hover {
+    filter: brightness(1);
+    background-color: aliceblue;
+
+}
+.main65>.setting>.body1>h3>.btn11{
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+    background-color: green ;
+    padding:4px 15px ;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    
+}
+.main65>.setting>.body1>h3>.btn11:hover{
+opacity: .8;
+    
+}
+.main65>.setting>.body1>.otpn {
+    transition: .2s ease;
+    width: 80%;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.main65>.setting>.body1>.otpn:hover {
+
+    background-color: aliceblue;
+}

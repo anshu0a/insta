@@ -1,0 +1,77 @@
+.opton,
+.opton>.inopton>h3,
+.opton>.inopton>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.opton {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.686);
+}
+
+.opton>.inopton {
+    color: rgb(51, 51, 51);
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    max-width: calc(100% - 50px);
+    max-height: calc(90% - 40px);
+    border-radius: 20px;
+}
+
+.opton>.inopton>h3 {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+    user-select: none;
+    margin-top: 0;
+}
+
+.opton>.inopton>h3>img {
+    cursor: pointer;
+    transform: rotateZ(180deg);
+    padding: 4px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    width: 18px;
+}
+
+.opton>.inopton>h3>img:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.opton>.inopton>div {
+    flex-direction: row;
+    gap: 8px;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: .3s ease;
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin: 2px 0;
+    border-radius: 8px;
+}
+
+.opton>.inopton>.mydiv:hover {
+    background-color: aliceblue;
+}
+
+.opton>.inopton>.mydiv>img {
+    width: 20px;
+    border-radius: 0%; 
+}
+
+.opton>.inopton>div>img {
+    width: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.opton>.inopton>div>a{
+    color:rgb(55, 55, 55);
+}

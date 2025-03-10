@@ -1,0 +1,115 @@
+
+.main65>.resize,
+.main65>.resize>.inresize>.allsize,
+.main65>.resize>.inresize>.allsize>.sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main65>.resize {
+    cursor: pointer;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.82);
+}
+
+.main65>.resize>.cutto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.main65>.resize>.cutto:hover {
+    opacity: .8
+}
+
+.main65>.resize>.inresize {
+    text-align: center;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    animation: zoom09 .4s forwards ease-in-out;
+}
+
+.main65>.resize>.inresize>.allsize {
+    flex-direction: column;
+    gap: 2px
+}
+
+.main65>.resize>.inresize>p {
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(57, 57, 57);
+    margin: 10px, 0;
+}
+
+.main65>.resize>.inresize>.allsize>.sec1 {
+    flex-direction: row;
+    gap: 5px;
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    padding: 0, 20px;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: flex-start;
+
+}
+
+.main65>.resize>.inresize>.allsize>.sec1:hover {
+    background-color: rgb(242, 252, 255);
+}
+
+.main65>.resize>.inresize>.allsize>.sec1>p {
+    margin: 0;
+    font-weight: 500;
+    color: rgb(170, 170, 170);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.main65>.resize>.inresize>.allsize>.sec1:hover>p {
+    color: rgb(44, 44, 44);
+}
+
+.main65>.resize>.inresize>.allsize>.sec1>div {
+    transition: .2s ease;
+    cursor: pointer;
+    border: 3px solid rgb(170, 170, 170);
+    border-radius: 5px;
+}
+
+.main65>.resize>.inresize>.allsize>.sec1:hover>div {
+    cursor: pointer;
+    border: 3px solid rgb(72, 72, 72);
+    border-radius: 5px;
+}
+
+@keyframes zoom09 {
+    0% {
+        scale: 0
+    }
+
+    80% {
+        scale: 1.1
+    }
+
+    100% {
+        scale: 1
+    }
+
+}

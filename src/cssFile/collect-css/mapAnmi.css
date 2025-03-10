@@ -1,0 +1,37 @@
+
+.map{
+   
+    position: fixed;
+    bottom:0;
+    right:0;
+    width:100px;
+    margin:15px ;
+    z-index: 1;
+}
+.map>g>path:nth-child(1){
+    cursor: pointer;
+    fill:#1c274c24;
+
+}
+.map>.gg:hover>path:nth-child(1){
+    fill:#1c274c46;
+}
+.map>g>path+path{
+    cursor: pointer;
+    fill:#1C274C;
+
+}
+.map>.gg:hover>path+path{
+    animation: entr 1s ease-in-out  forwards;
+}
+@keyframes entr {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    30%{
+        transform: rotateZ(70deg);
+    }
+    100%{
+        transform: rotateZ(-360deg);
+    }
+}

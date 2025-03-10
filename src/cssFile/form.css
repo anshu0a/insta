@@ -1,0 +1,162 @@
+form,
+.asktologin,
+.asktologin>.indiv,
+.asktologin>.indiv>.loginbtn,
+.asktologin>.indiv>.loginbtn>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    gap: 15px;
+}
+
+.textField {
+    width: 90%;
+}
+
+.textField input {
+    margin: 8px 0;
+    padding: 0 10px;
+}
+
+.textField input::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.textField .MuiInputBase-input {
+    color: white;
+}
+
+.textField .MuiFormLabel-root {
+    color: white;
+
+}
+
+.textField .MuiInputBase-root:before {
+    border-bottom-color: white;
+}
+
+.outbtn {
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+button {
+    user-select: none;
+    cursor: pointer;
+    padding: 5px 30px 8px 30px;
+    background-color: rgba(201, 201, 201, 0);
+    border: 1px solid rgb(0, 146, 44);
+    color: rgb(0, 237, 71);
+    font-size: inherit;
+    font-family: inherit;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: rgb(0, 146, 44);
+    color: rgb(255, 255, 255);
+}
+
+.btn1 {
+    border: 1px solid rgb(0, 145, 255);
+    color: rgb(0, 145, 255);
+}
+
+.btn1:hover {
+    background-color: rgb(0, 145, 255);
+    color: rgb(255, 255, 255);
+}
+
+.btn2 {
+    border: 1px solid rgb(255, 64, 0);
+    color: rgb(255, 64, 0);
+}
+
+.btn2:hover {
+    background-color: rgb(255, 64, 0);
+    color: rgb(255, 255, 255);
+}
+
+.asktologin {
+    text-align: center;
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.873);
+}
+
+.asktologin>.indiv {
+    gap:5px;
+    max-width: calc(95% - 60px);
+    width: 400px;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: white;
+    color: grey;
+    animation: xoomu .4s ease;
+}
+
+@keyframes xoomu {
+    0% {
+        scale: 0;
+    }
+
+    80% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+.asktologin>.indiv>p{
+    font-size: 18px;
+    margin:0;
+}
+.asktologin>.indiv>.msg{
+    font-size: 13px;
+    color:rgb(185, 185, 185);
+    margin-bottom: 20px;
+}
+.asktologin>.indiv>p>span{
+color:rgb(0, 0, 0);
+font-size: 16px;
+}
+
+.asktologin>.indiv>.loginbtn {
+    width: 80%;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.asktologin>.indiv>.loginbtn>div {
+    transition: .2s ease;
+    cursor: pointer;
+    border: 1px solid rgb(202, 202, 202);
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.asktologin>.indiv>.loginbtn>.sv{
+    background-color: rgb(0, 187, 255);
+    border: 1px solid rgb(255, 255, 255);
+    color:white;
+}
+
+.asktologin>.indiv>.loginbtn>div:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.407);
+    border: 1px solid rgb(255, 255, 255);
+}

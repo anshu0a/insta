@@ -1,0 +1,384 @@
+.chatinfoe,
+.chatinfoe>.ttop,
+.chatinfoe>.ttop>.block1,
+.chatinfoe>.ttop>.block1>.namew,
+.chatinfoe>.ttop>.block2,
+.chatinfoe>.ttop>.block2>.svgdiv,
+.chatinfoe>.cen,
+.chatinfoe>.cen>.extr,
+.chatinfoe>.cen>.extr>.mm,
+.chatinfoe>.cen>.extr>.mm>div,
+.chatinfoe>.sendu,
+.chatinfoe>.sendu>.insendu,
+.chatinfoe>.sendu>.insendu>.sseenndt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.chatinfoe {
+    cursor: pointer;
+    align-self: flex-start;
+    width: 100%;
+    flex-direction: column;
+}
+
+.chatinfoe>.ttop {
+    background-color: aliceblue;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: calc(100% - 10px);
+    padding: 10px 5px;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.chatinfoe>.ttop>.block1 {
+    gap: 5px;
+    width: calc(100% - 80px)
+}
+
+.chatinfoe>.ttop>.block1>img {
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.chatinfoe>.ttop>.block1>.namew {
+    width: calc(100% - 45px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.chatinfoe>.ttop>.block1>.namew>.usn {
+    margin: 0;
+    color: rgb(51, 51, 51);
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.chatinfoe>.ttop>.block1>.namew>.sts {
+    margin: 0;
+    font-size: 11px;
+}
+
+.chatinfoe>.ttop>.block2 {
+    gap: 2px;
+    width: 80px
+}
+
+.chatinfoe>.ttop>.block2>.svgdiv {
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+
+.chatinfoe>.ttop>.block2>.svgdiv>svg {
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+
+.chatinfoe>.ttop>.block2>.svgdiv:hover>svg {
+    transition: .1s ease-out;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.chatinfoe>.cen {
+    padding: 10px 0 150px 0;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chatinfoe>.cen>.war {
+    text-align: center;
+    color: rgba(0, 81, 19, 0.332);
+    font-size: 13px;
+    width: 65%;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 5px
+}
+
+.chatinfoe>.nichee {
+    cursor: pointer;
+    position: fixed;
+    background-color: rgb(0, 157, 255);
+    box-shadow: 3px 3px 9px rgba(0, 77, 96, 0.335);
+    width: 30px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    animation: uppx .3s ease-out forwards;
+}
+
+.chatinfoe>.nichee:hover {
+    transition: .1s ease;
+    background-color: rgb(0, 128, 207);
+    box-shadow: 4px 4px 9px rgba(0, 77, 96, 0.484);
+}
+
+@keyframes uppx {
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: 65px;
+    }
+}
+
+.chatinfoe>.cen>.hel {
+    max-width: 70%;
+    cursor: pointer;
+    background-color: rgb(241, 249, 255);
+    font-size: 17px;
+    border: 1px solid rgb(68, 202, 255);
+    color: rgb(130, 130, 130);
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 6px 10px;
+    animation: upper 5s infinite ease-in-out forwards;
+}
+
+@keyframes upper {
+    0% {
+        transform: translateY(0px);
+
+        box-shadow: 3px 3px 9px rgb(255, 255, 255);
+    }
+
+    25% {
+        transform: translateY(-10px);
+        box-shadow: 3px 3px 9px rgb(182, 198, 206);
+    }
+
+    50% {
+        transform: translateY(0px);
+
+        box-shadow: 3px 3px 9px rgb(255, 255, 255);
+    }
+
+    100% {
+        transform: translateY(0px);
+
+        box-shadow: 3px 3px 9px rgb(255, 255, 255);
+    }
+}
+
+.chatinfoe>.cen>.hel>span {
+    color: rgb(0, 149, 255);
+}
+
+.chatinfoe>.cen>.extr {
+    width: 100%;
+    flex-direction: column;
+}
+
+.chatinfoe>.cen>.extr>.ddaat {
+    font-size: 14px;
+    text-align: center;
+    color: rgb(0, 140, 255);
+    width: 70%;
+
+}
+
+.chatinfoe>.cen>.extr>.mm {
+    max-width: 70%;
+    margin: 0 2px;
+    align-items: flex-end;
+    gap: 2px;
+    overflow: hidden;
+}
+
+.chatinfoe>.cen>.extr>.mm>div {
+    width: calc(100%);
+    flex-direction: column;
+    overflow: hidden;
+    margin: 5px 0;
+    padding: 10px;
+    gap: 5px
+}
+
+.chatinfoe>.cen>.extr>.mm>div>img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    max-height: 100px;
+    aspect-ratio: 1.3/1;
+}
+
+.chatinfoe>.cen>.extr>.mm>div>.pph {
+    max-width: 100%;
+    word-wrap: break-word;
+    margin: 0;
+    font-size: 13px;
+    overflow: hidden;
+
+}
+
+.chatinfoe>.cen>.extr>.mm>svg {
+    width: 8px;
+    min-width:8px;
+    max-width: 8px;
+    margin:2px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.chatinfoe>.cen>.extr>.mm>.tty {
+    user-select: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    margin: 0;
+    color: rgb(184, 184, 184);
+    font-size: 10px;
+}
+
+.chatinfoe>.cen>.extr>.hiss {
+    align-self: flex-start;
+    text-align: start;
+    flex-direction: row;
+    border-left: 3px solid rgb(52, 52, 52);
+}
+
+.chatinfoe>.cen>.extr>.hiss>div {
+    background-color: rgb(245, 245, 245);
+    color: rgb(90, 90, 90);
+    border-radius: 0 12px 12px 0;
+    align-items: flex-start;
+}
+
+
+.chatinfoe>.cen>.extr>.myy {
+    text-align: end;
+    align-self: flex-end;
+    flex-direction: row-reverse;
+    border-right: 3px solid rgb(0, 94, 22);
+}
+
+.chatinfoe>.cen>.extr>.myy>div {
+    align-items: flex-end;
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(240, 235, 255);
+    color: rgb(90, 90, 90);
+}
+
+.chatinfoe>.sendu {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 527px);
+    padding: 5px 5px 10px 5px;
+    gap: 0px;
+    box-shadow: 4px 0px 10px rgb(255, 255, 255);
+}
+
+.chatinfoe>.sendu>.insendu {
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 30px;
+    width: calc(100% - 10px);
+    gap: 4px;
+    padding: 5px;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.chatinfoe>.sendu>.insendu>input {
+    width: calc(100% - 74px);
+    outline: none;
+    border: none;
+    height: 100%;
+    font-family: inherit;
+    font-size: 15px;
+    color: rgb(49, 49, 49);
+}
+
+.chatinfoe>.sendu>.insendu>.sseenndt {
+    width: 27px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.chatinfoe>.sendu>.insendu>.sseenndt>div>.vv {
+    position: absolute;
+    opacity: 1;
+    width: 12px;
+    padding: 1px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    fill: red;
+    background-color: white;
+
+}
+
+.chatinfoe>.sendu>.insendu>.sseenndt>svg,
+.chatinfoe>.sendu>.insendu>.sseenndt>img {
+    width: 23px;
+    aspect-ratio: 1/1;
+    opacity: .6;
+
+}
+
+.chatinfoe>.sendu>.insendu>.sseenndt>img {
+    opacity: 1;
+    border-radius: 3px;
+}
+
+.chatinfoe>.sendu>.insendu>.sseenndt:hover>svg {
+    transition: .1s ease-out;
+    width: 26px;
+    opacity: 1;
+}
+
+.chatinfoe>.sendu>.insendu>.sr {
+    position: relative;
+    animation: rown .5s ease-out forwards;
+}
+
+.chatinfoe>.sendu>.insendu>.sr2 {
+    position: relative;
+    animation: rown2 .5s ease-out forwards;
+}
+
+@keyframes rown {
+    100% {
+        transform: translateY(0px) rotateZ(0deg);
+    }
+
+    0% {
+        transform: translateY(40px) rotateZ(-130deg)
+    }
+}
+
+@keyframes rown2 {
+    0% {
+        transform: translateY(0px) rotateZ(0deg);
+    }
+
+    100% {
+        transform: translateY(-40px) rotateZ(-100deg)
+    }
+}
+
+@media(max-width:900px) {
+    .chatinfoe>.sendu {
+        width: calc(100% - 180px)
+    }
+}
+
+@media(max-width:500px) {
+    .chatinfoe>.sendu {
+        width: calc(100% - 112px)
+    }
+}

@@ -1,0 +1,78 @@
+.outtpostt,
+.outsix,
+.outlike,
+.nopost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+.outtpostt{
+    width:100%;
+}
+.posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: calc(100% - 5px);
+    gap: 2px;
+    padding: 1px;
+    position: relative;
+}
+
+.outsix {
+    cursor: pointer;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+
+}
+
+.outsix>img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.outsix:hover>img {
+    transition: .2s;
+    filter: brightness(.5);
+}
+
+.outlike {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    gap:0px;
+    display:none;
+}
+.outsix:hover .outlike{
+    display:flex;
+}
+.outlike>p {
+    margin: 0;
+    font-size: small;
+}
+.nopost{
+    text-align: center;
+    margin:20px 0 ;
+    width:100%;
+}
+.nopost>img{
+    width:30%;
+    max-width: 200px;
+}
+.nopost>.sha{
+    
+    margin:0;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.nopost>a{
+    color: rgb(0, 128, 255);
+    font-weight: 500;
+}
+.nopost>a:hover{
+    color: rgb(0, 89, 177);
+}

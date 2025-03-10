@@ -1,0 +1,73 @@
+.mainmore>.middlePart>.layerd,
+.onePaet,
+.onePaet>.inx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.mainmore>.middlePart>.layerd {
+    width: calc(100% - 42px);
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 15px;
+}
+
+.mainmore>.middlePart>.layerd:hover {
+    transition: .2s ease;
+    border: 1px solid rgba(0, 136, 255, 0.35);
+}
+
+.onePaet {
+    user-select: none;
+    cursor: pointer;
+    width: calc(100% - 20px);
+    padding: 10px;
+    justify-content: space-between;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+.onePaet:hover {
+    transition: .2s ease-out;
+    background-color: aliceblue;
+}
+
+.onePaet>.inx {
+    gap: 5px;
+}
+
+.onePaet>.inx>p {
+    margin: 0;
+    color: rgb(84, 84, 84);
+}
+
+.onePaet:hover>.inx>p {
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+.onePaet>.inx>img {
+    width: 20px;
+}
+
+.onePaet:hover>.inx>img {
+    transition: .8s ease-in-out;
+    transform: rotateY(360deg);
+}
+
+.mainmore>.middlePart>.layerd>details {
+    margin: 5px 0;
+    width: calc(100% - 10px);
+    padding: 5px;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 10px;
+}
+
+.mainmore>.middlePart>.layerd>details>summary {
+    list-style: none;
+    width: 100%;
+}

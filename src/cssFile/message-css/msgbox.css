@@ -1,0 +1,51 @@
+.allmsg >.msgbox8,
+.allmsg >.msgbox8>.info{
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+}
+.allmsg >.msgbox8{
+    width:calc(100% - 300px);
+    min-height: 85vh;
+}
+.allmsg >.msgbox8>.lodu{
+    width:100%;
+    margin:70px 5px;
+    align-self: flex-start;
+}
+.allmsg >.msgbox8>.info{
+    text-align: center;
+width: 100%;
+flex-direction: column;
+
+}
+.allmsg >.msgbox8>.info>svg{
+    width:50%;
+    max-width: 100px;
+}
+.allmsg >.msgbox8>.info>.pp{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top:15px;
+}
+.allmsg >.msgbox8>.info>.pp+p{
+    margin-top:0px;
+}
+.allmsg >.msgbox8>.info>.snd{
+    cursor: pointer;
+    background-color: rgb(0, 174, 255);
+    color:white;
+    border-radius: 6px;
+    padding:5px 10px;
+}
+.allmsg >.msgbox8>.info>.snd:hover{
+    background-color: rgb(0, 152, 222);
+}
+
+/* ________________________________________tab____________________________________________ */
+@media(max-width:900px) {
+    .allmsg >.msgbox8 {
+    width:calc(100% - 100px)
+    }
+}
+

@@ -1,0 +1,46 @@
+.emailp,.gender, .overview{
+    align-self: flex-start;
+}
+.emailwar{
+    margin:0;
+    align-self: flex-start;
+    color:rgb(255, 255, 255);
+}
+.emailwar  b{
+    color:rgb(255, 0, 0);
+}
+.timer{
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(195, 195, 195);
+}
+.email{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(60, 255, 0);
+}
+.chgemail{
+    cursor: pointer;
+    background-color: rgba(0, 255, 166, 0.129);
+    border-radius: 5px;
+    padding: 0 10px 4px 10px;
+
+}
+.chgemail:hover{
+    background-color: rgba(0, 188, 16, 0.797);
+}
+.resend{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.239);
+    padding:5px 10px 6px 10px;
+    border-radius: 5px;
+}
+.resend:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.gender >p{
+    margin: 5px 0 ;
+    font-size: 20px;
+}
+.overview >p >b{
+    color:rgb(203, 203, 203);
+}

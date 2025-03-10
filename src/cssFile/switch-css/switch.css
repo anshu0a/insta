@@ -1,0 +1,102 @@
+.mySwitch,
+.outbox>.myallrecebt,
+.outbox>.myallrecebt>.oneme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.mySwitch {
+    position: relative;
+    background-image: url("/img/recent.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.outbox>.myallrecebt {
+    width: calc(100% - 20px);
+    overflow: hidden;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.027);
+    border-radius: 5px;
+}
+
+.outbox>.myallrecebt::-webkit-scrollbar {
+    height: 2px;
+    background-color: rgb(112, 112, 112);
+}
+
+.outbox>.myallrecebt::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.outbox>.myallrecebt>.oneme {
+    position: relative;
+    width: 150px;
+    min-width: 150px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    flex-direction: column;
+}
+
+.outbox>.myallrecebt>.oneme>.myimg {
+    cursor: pointer;
+    transition: .3s ease;
+    width: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.outbox>.myallrecebt>.oneme:hover>.myimg {
+    width: 70%;
+}
+
+.outbox>.myallrecebt>.oneme>.cutme {
+    cursor: pointer;
+    transition: .3s ease;
+    width: 25px;
+    margin: 10px;
+    top: -5px;
+    right: -5px;
+    padding: 2px;
+    position: absolute;
+    background-color: rgb(2, 2, 2);
+    border-radius: 50%;
+}
+
+.outbox>.myallrecebt>.oneme:hover>.cutme {
+    top: 0px;
+    right: 0px;
+}
+
+.outbox>.myallrecebt>.oneme>p {
+    user-select: none;
+    cursor: pointer;
+    transition: .3s ease;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    width: calc(100% - 10px);
+    padding:0 5px;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.outbox>.myallrecebt>.oneme:hover>p {
+    bottom: 50%;
+    transform: translateY(50%);
+}

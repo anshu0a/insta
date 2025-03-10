@@ -1,0 +1,24 @@
+.strr,
+.strr>img {
+    user-select: none;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.strr {
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    padding: 3px;
+}
+
+.strr>img {
+    border: 2px solid transparent;
+    /* background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #833AB4, #FD1D1D, #FCB045) border-box; */
+    width: calc(100% - 9px);
+    padding: 2.5px;
+    object-fit: cover;
+}

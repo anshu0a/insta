@@ -1,0 +1,253 @@
+.showfollowerlist,
+.showfollowerlist>.mainlist,
+.showfollowerlist>.mainlist>.bl1,
+.showfollowerlist>.mainlist>.bl1>.back,
+.showfollowerlist>.mainlist>.bl2,
+.showfollowerlist>.mainlist>.bl3,
+.showfollowerlist>.mainlist>.bl3>.emmptyx,
+.showfollowerlist>.mainlist>.bl3>.onex,
+.showfollowerlist>.mainlist>.bl3>.onex>.part1,
+.showfollowerlist>.mainlist>.bl3>.onex>.part2,
+.showfollowerlist>.mainlist>.bl3>.onex>.part2>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.showfollowerlist {
+    position: fixed;
+    width: calc(100% - 209px);
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.777) !important;
+    z-index: 3;
+
+}
+
+.showfollowerlist>.mainlist {
+    position: relative;
+    color: rgb(41, 41, 41);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 10px;
+    max-height: calc(95% - 20px);
+    width: calc(95% - 20px);
+    max-width: 500px;
+    gap: 20px;
+
+}
+
+.showfollowerlist>.mainlist p {
+    color: rgb(41, 41, 41);
+    ;
+    margin: 0;
+}
+
+.showfollowerlist>.mainlist>.bl1 {
+    width: 100%;
+    flex-direction: row;
+    gap: 4px;
+    justify-content: flex-start;
+}
+
+.showfollowerlist>.mainlist>.bl1>.back {
+    background-color: rgb(245, 245, 245);
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 24px;
+    aspect-ratio: 1/1;
+}
+
+.showfollowerlist>.mainlist>.bl1>.back>.bbux {
+    width: 16px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.showfollowerlist>.mainlist>.bl1>.back:hover>.bbux {
+    transition: .05s ease-in-out;
+    width: 18px;
+}
+
+.showfollowerlist>.mainlist>.bl1>p {
+    font-size: 18px;
+}
+
+.showfollowerlist>.mainlist>.bl2 {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.showfollowerlist>.mainlist>.bl2>.pp {
+    cursor: pointer;
+    max-width: 100px;
+    color: grey;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    padding: 3px 5px;
+    width: 40%;
+    white-space: nowrap;
+    border-radius: 8px;
+    background-color: rgb(243, 243, 243);
+}
+
+.showfollowerlist>.mainlist>.bl2>.slct {
+    color: rgb(0, 119, 255);
+    background-color: rgb(245, 251, 255);
+}
+
+.showfollowerlist>.mainlist>.bl3 {
+    width: calc(100% - 14px);
+    margin-left: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-width: calc(100%);
+    justify-content: flex-start;
+    padding-right: 9px;
+    gap: 5px;
+}
+
+.showfollowerlist>.mainlist>.bl3::-webkit-scrollbar {
+    width: 6px;
+    background: rgba(255, 255, 255, 0);
+}
+
+.showfollowerlist>.mainlist>.bl3::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 7px;
+}
+
+.showfollowerlist>.mainlist>.bl3:hover::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 7px;
+}
+
+.showfollowerlist>.mainlist>.bl3>.emmptyx {
+    width: calc(100% - 30px);
+    padding: 15px;
+}
+
+.showfollowerlist>.mainlist>.bl3>.emmptyx>img {
+    width: 100px;
+}
+
+.showfollowerlist>.mainlist>.bl3>.emmptyx>p {
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 99, 182);
+}
+
+.showfollowerlist>.mainlist>.bl3>.tru>p {
+    color: rgb(52, 255, 201);
+}
+
+.showfollowerlist>.mainlist>.bl3>.onex {
+    padding: 4px 8px;
+    flex-direction: row;
+    width: calc(100% - 18px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    justify-content: space-between;
+    gap: 3px;
+}
+
+.showfollowerlist>.mainlist>.bl3>.onex:hover {
+    transition: .1s ease-in-out;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.showfollowerlist>.mainlist>.bl3>.onex>.part1 {
+    overflow: hidden;
+    width: calc(100% - 100px);
+    justify-content: flex-start;
+    min-width: 35px;
+    flex-direction: row;
+    gap: 5px
+}
+
+.showfollowerlist>.mainlist>.bl3>.onex>.part1>.imeg {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 35px;
+    aspect-ratio: 1/1;
+    border: 1px solid rgb(225, 225, 225);
+}
+
+.showfollowerlist>.mainlist>.bl3>.onex>.part1>p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(60, 60, 60);
+}
+
+.showfollowerlist>.mainlist>.bl3>.onex>.part2 {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5px
+}
+
+.showfollowerlist>.mainlist>.bl3>.onex>.part2>a {
+    cursor: pointer;
+    padding: 4px 8px;
+    flex-direction: row;
+    gap: 5px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 8px;
+}
+
+.showfollowerlist>.mainlist>.bl3>.onex>.part2>a:hover {
+    background-color: rgba(0, 153, 255, 0.07);
+}
+
+.showfollowerlist>.mainlist>.bl3>.onex>.part2>a:hover>img {
+    transition: .8s;
+    transform: rotateY(360deg);
+}
+
+.showfollowerlist>.mainlist>.bl3>.onex>.part2>a>p {
+    margin: 0;
+    white-space: nowrap;
+    color: rgb(188, 188, 188);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.showfollowerlist>.mainlist>.bl3>.onex>.part2>a:hover>p {
+    color: rgb(50, 153, 255);
+}
+
+.showfollowerlist>.mainlist>.bl3>.onex>.part2>.moris {
+    cursor: pointer;
+    width: 14px;
+    aspect-ratio: 1/2;
+}
+
+/* .showfollowerlist>.mainlist>.bl3>.optuions {
+    background-color: aqua;
+    width:90%;
+    height:60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+
+/* ______________________________________________________________________________ */
+@media (max-width:900px) {
+    .showfollowerlist {
+        width: calc(100% - 69px)
+    }
+}
+
+@media (max-width:500px) {
+    .showfollowerlist {
+        width: 100vw;
+        height: calc(100vh - 50px)
+    }
+}

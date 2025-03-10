@@ -1,0 +1,133 @@
+.fetch,
+.srchby{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fetch {
+    width: calc(100% - 20px);
+    padding: 10px;
+    gap: 10px;
+}
+
+.fetch>p {
+    width: calc(100% - 10px);
+    text-align: left;
+    position: relative;
+    padding: 0 5px;
+    align-self: flex-start;
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(152, 152, 152);
+}
+.fetch>p>b{
+    color:rgb(0, 241, 0);
+}
+.srchby {
+    position: relative;
+    user-select: none;
+    width: calc(100% - 40px);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(45, 45, 45, 0.515);
+    background-color: rgb(25, 25, 25);
+    flex-direction: row;
+    z-index: 1;
+    justify-content: flex-start;
+    height: 63px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.srchby::-webkit-scrollbar {
+    height: 3.5px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+.srchby:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.srchby>div{
+    padding-left:10px;
+    scroll-snap-align: start; 
+    position: relative;
+}
+.srchby>div>.blnk {
+    position: absolute;
+    right:0;
+    top:0;
+    transform: translate(40% , -40%);
+    border-radius: 50%;
+    background-color: rgb(47, 255, 0);
+    border:4px solid rgb(19, 19, 19);
+    width: 6px;
+    aspect-ratio: 1/1;
+}
+
+.srchby>div>.ech{
+    z-index: 0;
+    border: 1px solid rgb(83, 83, 83);
+    padding: 4px 8px;
+    color: rgb(156, 156, 156);
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(123, 123, 123, 0.277);
+
+}
+
+.srchby>div>.slct {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0)
+}
+.fetch>.optns{
+    width:100%;
+}
+
+
+
+.fetch>p>img {
+    user-select: none;
+    transform: rotateY(180deg);
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    width: 30px;
+}
+
+.fetch>p>.sit {
+    transform: rotateY(0deg);
+    right: 50px;
+}
+
+.fetch>p>.up {
+    transform: rotateY(0deg);
+    right: 110px;
+}
+.fetch>p>.solve{
+    transform: rotateY(180deg);
+    left: 140px;
+}
+.fetch>p>.think{
+   right: 140px;
+}
+.fetch>p>.thinksit{
+    right:auto;
+ }
+.fetch>p>.jump{
+    right:auto;
+    left:80px
+ }
+ .fetch>p>.cycle{
+    right:100px;
+ }
+ .fetch>p>.ball{
+    right:50px;
+ }
+

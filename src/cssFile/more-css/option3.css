@@ -1,0 +1,282 @@
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>.relbox2,
+.mainmore>.middlePart>.option2>.mainprt>.prehelp,
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp,
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.thr,
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.thr>.pee,
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.thr>.outpe,
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.cntrl,
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme,
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.myinfo,
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.myinfo>.dtl,
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.mypro,
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.mypro>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.mainmore>.middlePart>.option2>.mainprt>.boc {
+    border: none !important;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>.text1 {
+    width: calc(100% - 20px);
+    outline: none;
+    border-radius: 10px;
+    resize: vertical;
+    padding: 10px;
+    min-height: 40px;
+    background-color: transparent;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>.text1::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(255, 0, 0, 0);
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>.text1::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>.relbox2 {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>.relbox2>a>.imgg {
+    width: 30px;
+    transition: .2s ease;
+    cursor: pointer;
+    border-radius: 25%;
+    padding: 8px
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.linkbox>.relbox2>a>.imgg:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.125);
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prev {
+    width: 100%;
+    text-align: start;
+    color: grey;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc(100% - 20px);
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp {
+    flex: 1 .5 200px;
+    overflow: hidden;
+    gap: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    border: 1px dashed rgb(183, 183, 183);
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.thr {
+    width: 100%;
+    justify-content: flex-start;
+    height: calc(100% - 25px);
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.thr>.pee {
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
+    flex-direction: row;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.thr>.outpe {
+    width: 100%;
+    flex-direction: row;
+    gap: 5px;
+    height: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: flex-start;
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.thr>.outpe>p {
+    font-size: 14px;
+    margin: 0;
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.thr>.outpe>img {
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.thr>.pee>p>b {
+    color: rgb(91, 91, 91);
+    user-select: none;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.thr>p {
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    word-wrap: break-word;
+    color: rgb(51, 51, 51);
+    height: calc(100% - 70px)
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.thr>p::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(255, 0, 0, 0);
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.thr>p::-webkit-scrollbar-thumb {
+
+    border-radius: 5px;
+    background: rgb(0, 0, 0);
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.cntrl {
+    width: 100%;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 5px
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.cntrl>img {
+    cursor: pointer;
+    width: 15px
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.prehelp>.onehelp>.cntrl>p {
+    user-select: none;
+    margin: 0;
+    font-size: 12px;
+    color: rgb(195, 195, 195);
+}
+
+/* _________________________________________________________________________________________________________________________________________ */
+
+
+
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.mypro {
+    width: 85%;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding:5%;
+    border:1px solid rgba(209, 209, 209, 0.919);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.mypro>a {
+    transition: .2s ease;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 20%;
+    width: 100px;
+    aspect-ratio: 1/1;
+    flex-direction: column;
+    gap: 5px;
+    color: inherit;
+}
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.mypro>a:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.455);
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.mypro>a>img {
+    width: 50px
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.mypro>a>p {
+    margin: 0;
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme >.mypro>p {
+    width: calc(100% - 110px);
+    margin:0;
+}
+
+
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme {
+    flex-direction: column;
+    width: calc(100% - 10px);
+    padding: 5px;
+    color: rgb(56, 56, 56);
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.myinfo {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.myinfo>img {
+
+    width: 35%;
+    margin: 2.5%;
+    border-radius: 30%;
+    aspect-ratio: 1/1;
+    min-width: 150px;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.myinfo>.dtl {
+
+    flex: 1 1 60%;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.myinfo>.dtl>a {
+    color: rgb(0, 29, 45);
+    width: 100%;
+
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>.myinfo>.dtl>p {
+    width: 100%;
+}
+
+.mainmore>.middlePart>.option2>.mainprt>.allaboutme>p {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:448px) {
+
+    .mainmore>.middlePart>.option2>.mainprt>.allaboutme>.myinfo>.dtl>a,
+    .mainmore>.middlePart>.option2>.mainprt>.allaboutme>.myinfo>.dtl>p {
+        text-align: center;
+    }
+}

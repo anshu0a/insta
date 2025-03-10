@@ -1,0 +1,13 @@
+.reels{
+    width:100%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+}
+@media(max-width:500px) {
+    .reels{
+        flex-direction: column;
+    }
+    
+}

@@ -1,0 +1,22 @@
+.postPage{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:5px;
+    width:calc(100% - 210px);
+    
+}
+@media(max-width:900px){
+    .postPage{
+        width:calc(100% - 68px)
+        
+    }
+}
+@media(max-width:500px) {
+    .postPage{
+        width:100%;
+        margin-top:55px;
+        
+    }
+}
