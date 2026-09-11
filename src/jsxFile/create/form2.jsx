@@ -97,7 +97,7 @@ export default function Form({ setResponseMessage }) {
 
                     const response = await axios.post('https://instaserver-knen.onrender.com/otp/create', {
                         email: info.email,
-                        name: info.fname
+                       name: info.fname
                     });
 
                     setResponseMessage(response.data);
@@ -105,6 +105,7 @@ export default function Form({ setResponseMessage }) {
                     setFormno((old) => ({ ...old, no: 3 }));
                     setOtp((old) => ({ ...old, no: response.data.otp, startTimer: true }));
                     setResend((old) => ({ ...old, startTimer: true }));
+                    alert("OTP: "+ response.data.otp);
 
                 } catch (error) {
                     setResponseMessage({
